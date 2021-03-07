@@ -35,7 +35,7 @@ const Main = () => {
             href="https://github.com/tantely-rabefarihy"
             target="_blank"
           >
-            <p>You can see my Github profile</p>
+            <p>You can take a look at my Github profile</p>
           </a>
         </section>
       </main>
