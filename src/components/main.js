@@ -28,14 +28,14 @@ const Main = () => {
           </div>
         </section>
         <section id="collaboration">
-          <h2>Let's collaborate !</h2>
+          <h2>Let's collaborate!</h2>
 
           <a
             id="profile-link"
             href="https://github.com/tantely-rabefarihy"
             target="_blank"
           >
-            <p>You can take a look at my Github profile</p>
+            <p>You can take a look at my Github profile.</p>
           </a>
         </section>
       </main>
