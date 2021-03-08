@@ -24,7 +24,9 @@ const Main = () => {
               </a>
               <p class="description">Covid tracker app</p>
             </div>
-            <div class="project-tile"></div>
+            <div class="project-tile">
+              <p class="description">Cocktail looker</p>
+            </div>
           </div>
         </section>
         <section id="collaboration">
