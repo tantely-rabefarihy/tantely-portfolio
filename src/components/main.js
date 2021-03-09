@@ -6,13 +6,25 @@ const Main = () => {
     <>
       <main>
         <section id="welcome-section">
-          <h1>Hey there 👋🏼 I'm Tantely.</h1>
-          <p>Web Developer</p>
+          <div className="titles">
+            <h1>Hey there 👋🏼 I'm Tantely.</h1>
+            <p className="subtitle">Web Developer</p>
+          </div>
+
+          <p className="about-me">
+            I'm baby adaptogen fingerstache drinking vinegar organic direct
+            trade skateboard butcher cronut chillwave, offal live-edge roof
+            party kombucha iceland woke. 8-bit copper mug mixtape, biodiesel
+            poutine pitchfork paleo. Hoodie fashion axe chia, blog kitsch tote
+            bag everyday carry. Disrupt asymmetrical tbh, unicorn before they
+            sold out distillery activated charcoal artisan twee occupy
+            microdosing YOLO celiac waistcoat.
+          </p>
         </section>
         <section id="projects">
           <h2>These are some of my projects</h2>
           <div className="projects-container">
-            <div class="project-tile">
+            <div className="project-tile">
               <a
                 href="https://github.com/tantely-rabefarihy/covid19-app-tracker"
                 target="_blank"
@@ -22,9 +34,9 @@ const Main = () => {
                   alt="project"
                 />
               </a>
-              <p class="description">Covid tracker app</p>
+              <p className="description">Covid tracker app</p>
             </div>
-            <div class="project-tile">
+            <div className="project-tile">
               <a
                 href="https://github.com/tantely-rabefarihy/cocktailDB"
                 target="_blank"
@@ -34,7 +46,7 @@ const Main = () => {
                   alt="project"
                 />
               </a>
-              <p class="description">Cocktail looker</p>
+              <p className="description">Cocktail corner</p>
             </div>
           </div>
         </section>
