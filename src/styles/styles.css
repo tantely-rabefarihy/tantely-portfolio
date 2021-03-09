@@ -20,8 +20,8 @@ p {
   width: 100%;
   justify-content: space-between;
   background: transparent;
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0; */
 }
 
 #navbar ul {
