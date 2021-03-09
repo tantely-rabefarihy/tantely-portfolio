@@ -68,6 +68,12 @@ section {
   font-weight: light;
 }
 
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 #projects h2 {
   color: rgb(0, 0, 0);
   text-align: center;
@@ -76,6 +82,7 @@ section {
 
 .project-tile img {
   width: 400px;
+  height: 300px;
 }
 
 .description {

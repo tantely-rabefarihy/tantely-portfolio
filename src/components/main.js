@@ -11,7 +11,7 @@ const Main = () => {
         </section>
         <section id="projects">
           <h2>These are some of my projects</h2>
-          <div>
+          <div className="projects-container">
             <div class="project-tile">
               <a
                 href="https://github.com/tantely-rabefarihy/covid19-app-tracker"
@@ -25,6 +25,15 @@ const Main = () => {
               <p class="description">Covid tracker app</p>
             </div>
             <div class="project-tile">
+              <a
+                href="https://github.com/tantely-rabefarihy/cocktailDB"
+                target="_blank"
+              >
+                <img
+                  src="https://github.com/tantely-rabefarihy/cocktailDB/raw/main/src/assets/cocktailDB.png"
+                  alt="project"
+                />
+              </a>
               <p class="description">Cocktail looker</p>
             </div>
           </div>
