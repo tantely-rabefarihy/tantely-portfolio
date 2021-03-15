@@ -26,6 +26,7 @@ section {
   align-items: center;
   align-content: center;
   justify-content: center;
+  padding: 0 1rem;
 }
 .titles {
   text-align: end;
@@ -66,17 +67,29 @@ section {
 }
 
 .project-tile img {
-  width: 400px;
-  height: 300px;
+  width: 20rem;
+  height: 20rem;
 }
 
 .description {
   color: rgb(0, 0, 0);
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 568px) {
   main {
     display: flex;
     flex-direction: column;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .about-me {
+    font-size: 1rem;
+    width: 20rem;
+    align-self: flex-end;
   }
 }

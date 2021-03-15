@@ -6,9 +6,8 @@ import Header from "../components/header"
 import GlobalStyle from "../styles/globalstyles"
 import Main from "../components/main"
 
-const IndexPage = () => (
+const Page = () => (
   <React.Fragment>
-    {/* <SEO title="Home" /> */}
     <Helmet>
       <title>Tantely Rabefarihy - Full Stack Developer</title>
       <meta name="title" content="Tantely Rabefarihy - Full Stack Developer" />
@@ -26,4 +25,4 @@ const IndexPage = () => (
   </React.Fragment>
 )
 
-export default IndexPage
+export default Page

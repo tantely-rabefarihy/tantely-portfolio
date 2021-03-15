@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import "../styles/styles.css"
-import logo from "../images/logo.png"
+import logo from "../images/logo_tantely.svg"
 
 const NavBar = styled.nav`
   display: flex;
@@ -56,11 +56,11 @@ const NavBar = styled.nav`
 `
 
 const Logo = styled.div`
-  padding: 1rem;
+  padding: 0.75rem;
 
   img {
-    width: 60px;
-    height: 40px;
+    width: 3rem;
+    height: 2rem;
   }
 `
 
@@ -69,7 +69,7 @@ const Header = () => {
     <>
       <NavBar>
         <Logo>
-          <img src={logo} />
+          <img src={logo} alt="logo" />
         </Logo>
         <ul>
           <li>
