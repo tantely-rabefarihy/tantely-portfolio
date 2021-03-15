@@ -1,12 +1,13 @@
 import React from "react"
+import styled from "styled-components"
 import "../styles/styles.css"
 
 const Main = () => {
   return (
     <>
-      <main>
-        <section id="welcome-section">
-          <div className="titles">
+      <MainContainer>
+        <Welcome id="welcome-section">
+          <Titles className="titles">
             <h1>
               Hey there{" "}
               <span role="img" aria-label="hand emoji">
@@ -14,9 +15,9 @@ const Main = () => {
               </span>{" "}
               I'm Tantely.
             </h1>
-            <p className="subtitle">Web Developer</p>
-          </div>
-          <div className="about-me">
+            <Subtitle className="subtitle">Web Developer</Subtitle>
+          </Titles>
+          <About className="about-me">
             <p>
               I'm baby adaptogen fingerstache drinking vinegar organic direct
               trade skateboard butcher cronut chillwave, offal live-edge roof
@@ -26,13 +27,13 @@ const Main = () => {
               sold out distillery activated charcoal artisan twee occupy
               microdosing YOLO celiac waistcoat.
             </p>
-          </div>
-        </section>
+          </About>
+        </Welcome>
 
-        <section id="projects">
+        <ProjectsContainer id="projects">
           <h2>These are some of my projects</h2>
-          <div className="projects-container">
-            <div className="project-tile">
+          <Projects className="projects-container">
+            <Card className="project-tile">
               <a
                 href="https://github.com/tantely-rabefarihy/covid19-app-tracker"
                 target="_blank"
@@ -43,9 +44,11 @@ const Main = () => {
                   alt="project"
                 />
               </a>
-              <p className="description">Covid tracker app</p>
-            </div>
-            <div className="project-tile">
+              <Description className="description">
+                Covid tracker app
+              </Description>
+            </Card>
+            <Card className="project-tile">
               <a
                 href="https://github.com/tantely-rabefarihy/cocktailDB"
                 target="_blank"
@@ -56,10 +59,10 @@ const Main = () => {
                   alt="project2"
                 />
               </a>
-              <p className="description">Cocktail corner</p>
-            </div>
-          </div>
-        </section>
+              <Description className="description">Cocktail corner</Description>
+            </Card>
+          </Projects>
+        </ProjectsContainer>
         <section id="collaboration">
           <h2>Let's collaborate!</h2>
           <a
@@ -71,9 +74,94 @@ const Main = () => {
             <p>You can take a look at my Github profile.</p>
           </a>
         </section>
-      </main>
+      </MainContainer>
     </>
   )
 }
 
 export default Main
+
+const MainContainer = styled.main`
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (max-width: 568px) {
+    display: flex;
+    flex-direction: column;
+  }
+`
+const Welcome = styled.section`
+  margin-top: 5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  /* padding: 0 1rem; */
+`
+
+// section {
+//   height: 100vh;
+// }
+const Titles = styled.div`
+  text-align: end;
+  width: fit-content;
+  align-self: flex-start;
+  margin-left: 8rem;
+
+  h1 {
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+`
+
+const Subtitle = styled.p`
+  color: black;
+  font-size: 2rem;
+  font-weight: light;
+`
+
+const About = styled.div`
+  font-size: 1rem;
+  width: 20rem;
+  align-self: flex-end;
+  margin-right: 14rem;
+  margin-bottom: 10rem;
+
+  @media only screen and (max-width: 568px) {
+    font-size: 1rem;
+    width: 20rem;
+    align-self: flex-end;
+  }
+`
+
+const ProjectsContainer = styled.section`
+  h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 20px;
+  }
+`
+const Projects = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  @media only screen and (max-width: 568px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+`
+
+const Card = styled.div`
+  img {
+    width: 20rem;
+    height: 20rem;
+  }
+`
+const Description = styled.p`
+  color: rgb(0, 0, 0);
+`

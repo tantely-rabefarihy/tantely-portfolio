@@ -6,7 +6,6 @@ import logo from "../images/logo_tantely.svg"
 const NavBar = styled.nav`
   display: flex;
   flex-direction: row;
-  width: 100%;
   justify-content: space-between;
   background: transparent;
 

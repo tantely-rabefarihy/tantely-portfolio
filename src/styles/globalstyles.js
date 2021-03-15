@@ -2,6 +2,19 @@ import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+  font-family: "Questrial", sans-serif;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
     margin:0;
     padding:0;
