@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import "../styles/styles.css"
 import logo from "../images/logo_tantely.svg"
 
 const NavBar = styled.nav`
@@ -12,19 +11,21 @@ const NavBar = styled.nav`
   ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: fit-content;
+    margin: 0;
+    padding: 0;
   }
 
   li {
     list-style-type: none;
-    padding: 0 1rem;
+    display: flex;
+    padding-right: 1.5rem;
+    align-self: center;
   }
 
   a {
     text-decoration: none;
     color: black;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
     /* underline effect for the links */
@@ -36,7 +37,7 @@ const NavBar = styled.nav`
 
     :after {
       background: none repeat scroll 0 0 transparent;
-      bottom: -10px;
+      top: 1.2rem;
       content: "";
       display: block;
       height: 4px;

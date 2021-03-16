@@ -1,13 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import "../styles/styles.css"
 
 const Main = () => {
   return (
     <>
       <MainContainer>
-        <Welcome id="welcome-section">
-          <Titles className="titles">
+        <Welcome>
+          <Titles>
             <h1>
               Hey there{" "}
               <span role="img" aria-label="hand emoji">
@@ -15,9 +14,9 @@ const Main = () => {
               </span>{" "}
               I'm Tantely.
             </h1>
-            <Subtitle className="subtitle">Web Developer</Subtitle>
+            <Subtitle>Web Developer</Subtitle>
           </Titles>
-          <About className="about-me">
+          <About>
             <p>
               I'm baby adaptogen fingerstache drinking vinegar organic direct
               trade skateboard butcher cronut chillwave, offal live-edge roof
@@ -30,10 +29,10 @@ const Main = () => {
           </About>
         </Welcome>
 
-        <ProjectsContainer id="projects">
+        <ProjectsContainer>
           <h2>These are some of my projects</h2>
-          <Projects className="projects-container">
-            <Card className="project-tile">
+          <Projects id="projects">
+            <Card>
               <a
                 href="https://github.com/tantely-rabefarihy/covid19-app-tracker"
                 target="_blank"
@@ -44,11 +43,9 @@ const Main = () => {
                   alt="project"
                 />
               </a>
-              <Description className="description">
-                Covid tracker app
-              </Description>
+              <Description>Covid tracker app</Description>
             </Card>
-            <Card className="project-tile">
+            <Card>
               <a
                 href="https://github.com/tantely-rabefarihy/cocktailDB"
                 target="_blank"
@@ -59,11 +56,11 @@ const Main = () => {
                   alt="project2"
                 />
               </a>
-              <Description className="description">Cocktail corner</Description>
+              <Description>Cocktail corner</Description>
             </Card>
           </Projects>
         </ProjectsContainer>
-        <section id="collaboration">
+        <Collaboration id="collaboration">
           <h2>Let's collaborate!</h2>
           <a
             id="profile-link"
@@ -73,7 +70,7 @@ const Main = () => {
           >
             <p>You can take a look at my Github profile.</p>
           </a>
-        </section>
+        </Collaboration>
       </MainContainer>
     </>
   )
@@ -84,6 +81,7 @@ export default Main
 const MainContainer = styled.main`
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
   @media only screen and (max-width: 568px) {
     display: flex;
@@ -91,49 +89,48 @@ const MainContainer = styled.main`
   }
 `
 const Welcome = styled.section`
-  margin-top: 5rem;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: center;
-  /* padding: 0 1rem; */
+  padding: 0 1rem;
+  margin-top: 2rem;
 `
 
-// section {
-//   height: 100vh;
-// }
 const Titles = styled.div`
-  text-align: end;
   width: fit-content;
   align-self: flex-start;
-  margin-left: 8rem;
 
   h1 {
     color: rgb(0, 0, 0);
-    font-size: 3rem;
+    font-size: 2rem;
+    margin: 0;
     font-weight: bolder;
+  }
+
+  @media only screen and (min-width: 568px) {
+    display: flex;
+    flex-direction: column;
   }
 `
 
 const Subtitle = styled.p`
+  text-align: end;
   color: black;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: light;
 `
 
 const About = styled.div`
-  font-size: 1rem;
-  width: 20rem;
-  align-self: flex-end;
-  margin-right: 14rem;
-  margin-bottom: 10rem;
+  p {
+    font-size: 1rem;
+  }
 
   @media only screen and (max-width: 568px) {
-    font-size: 1rem;
-    width: 20rem;
-    align-self: flex-end;
+    p {
+      font-size: 0.75rem;
+    }
   }
 `
 
@@ -147,6 +144,7 @@ const ProjectsContainer = styled.section`
 const Projects = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 
   @media only screen and (max-width: 568px) {
@@ -157,11 +155,14 @@ const Projects = styled.div`
 `
 
 const Card = styled.div`
+  align-self: center;
   img {
     width: 20rem;
     height: 20rem;
+    border-radius: 5px;
   }
 `
 const Description = styled.p`
   color: rgb(0, 0, 0);
 `
+const Collaboration = styled.section``

@@ -1,13 +1,14 @@
 import React from "react"
-// import SEO from "../components/seo"
+
 import Layout from "../components/layout"
 import Helmet from "react-helmet"
 import Header from "../components/header"
 import GlobalStyle from "../styles/globalstyles"
 import Main from "../components/main"
+import { ParticleContainer } from "../styles/particle"
 
 const Page = () => (
-  <React.Fragment>
+  <>
     <Helmet>
       <title>Tantely Rabefarihy - Full Stack Developer</title>
       <meta name="title" content="Tantely Rabefarihy - Full Stack Developer" />
@@ -22,7 +23,7 @@ const Page = () => (
       <Header />
       <Main />
     </Layout>
-  </React.Fragment>
+  </>
 )
 
 export default Page
