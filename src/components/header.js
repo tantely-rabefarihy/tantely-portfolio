@@ -8,6 +8,9 @@ const NavBar = styled.nav`
   justify-content: space-between;
   background: transparent;
 
+  @media only screen and (max-width: 568px) {
+  }
+
   ul {
     display: flex;
     flex-direction: row;

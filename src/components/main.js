@@ -1,5 +1,9 @@
 import React from "react"
 import styled from "styled-components"
+import Github from "../images/github_logo.svg"
+import Letter from "../images/letter_logo.svg"
+
+import { EmojiMoving, SlideIn } from "../styles/Animations"
 
 const Main = () => {
   return (
@@ -9,9 +13,9 @@ const Main = () => {
           <Titles>
             <h1>
               Hey there{" "}
-              <span role="img" aria-label="hand emoji">
+              <Hand role="img" aria-label="hand emoji">
                 👋🏼
-              </span>{" "}
+              </Hand>{" "}
               I'm Tantely.
             </h1>
             <Subtitle>Web Developer</Subtitle>
@@ -61,15 +65,24 @@ const Main = () => {
           </Projects>
         </ProjectsContainer>
         <Collaboration id="collaboration">
-          <h2>Let's collaborate!</h2>
-          <a
-            id="profile-link"
-            href="https://github.com/tantely-rabefarihy"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <p>You can take a look at my Github profile.</p>
-          </a>
+          <h2>Connect with me and let's collaborate!</h2>
+          <SocialLinks>
+            <a
+              id="profile-link"
+              href="https://github.com/tantely-rabefarihy"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Git src={Github} alt="github-logo" />
+            </a>
+            <a
+              id="email-link"
+              href="mailto:tantelyrab@gmail.com"
+              rel="noreferrer"
+            >
+              <Letr src={Letter} alt="letter-logo" />
+            </a>
+          </SocialLinks>
         </Collaboration>
       </MainContainer>
     </>
@@ -78,40 +91,54 @@ const Main = () => {
 
 export default Main
 
+const Hand = styled.span`
+  animation: ${EmojiMoving} 2.5s 1;
+  animation-delay: 2s;
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+  will-change: transform;
+`
+
 const MainContainer = styled.main`
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-
+  padding: 0 1rem;
   @media only screen and (max-width: 568px) {
-    display: flex;
-    flex-direction: column;
   }
 `
 const Welcome = styled.section`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  justify-content: space-evenly;
   padding: 0 1rem;
-  margin-top: 2rem;
+  height: 100vh;
+
+  @media only screen and (max-width: 568px) {
+    height: 80vh;
+  }
 `
 
 const Titles = styled.div`
-  width: fit-content;
-  align-self: flex-start;
+  margin: 0 auto;
+  flex-direction: column;
+  /* transform: translateY(0px); */
+  opacity: 0;
+  animation: ${SlideIn} 1s 0.5s forwards;
 
   h1 {
-    color: rgb(0, 0, 0);
-    font-size: 2rem;
-    margin: 0;
+    font-size: 4rem;
     font-weight: bolder;
+    margin: 0;
+    width: 100%;
   }
 
-  @media only screen and (min-width: 568px) {
-    display: flex;
-    flex-direction: column;
+  @media only screen and (max-width: 568px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    align-items: center;
+    text-align: center;
   }
 `
 
@@ -120,14 +147,27 @@ const Subtitle = styled.p`
   color: black;
   font-size: 1.5rem;
   font-weight: light;
+
+  @media only screen and (max-width: 568px) {
+    text-align: center;
+    font-size: 1.2rem;
+  }
 `
 
 const About = styled.div`
+  width: 50%;
+  align-self: flex-end;
+  /* transform: translateY(0px); */
+  opacity: 0;
+  animation: ${SlideIn} 1s 0.5s forwards;
+  animation-delay: 3s;
+
   p {
     font-size: 1rem;
   }
 
   @media only screen and (max-width: 568px) {
+    width: 100%;
     p {
       font-size: 0.75rem;
     }
@@ -135,10 +175,11 @@ const About = styled.div`
 `
 
 const ProjectsContainer = styled.section`
+  padding-top: 2rem;
   h2 {
     color: rgb(0, 0, 0);
     text-align: center;
-    padding-top: 20px;
+    padding-bottom: 1rem;
   }
 `
 const Projects = styled.div`
@@ -148,7 +189,6 @@ const Projects = styled.div`
   justify-content: space-evenly;
 
   @media only screen and (max-width: 568px) {
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
   }
@@ -156,13 +196,33 @@ const Projects = styled.div`
 
 const Card = styled.div`
   align-self: center;
+
   img {
-    width: 20rem;
-    height: 20rem;
+    /* width: 100%; */
+    height: 10rem;
     border-radius: 5px;
   }
 `
-const Description = styled.p`
-  color: rgb(0, 0, 0);
+const Description = styled.p``
+
+const Collaboration = styled.section`
+  h2 {
+    text-align: center;
+  }
 `
-const Collaboration = styled.section``
+
+const SocialLinks = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  a {
+    padding: 0 0.5rem;
+  }
+`
+const Git = styled.img`
+  width: 2rem;
+  height: 2rem;
+`
+
+const Letr = styled(Git)``
