@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Github from "../images/github_logo.svg"
 import Letter from "../images/letter_logo.svg"
-
+import LinkedIn from "../images/linkedin.svg"
 import { EmojiMoving, SlideIn } from "../styles/Animations"
 
 const Main = () => {
@@ -16,7 +16,7 @@ const Main = () => {
               <Hand role="img" aria-label="hand emoji">
                 👋🏼
               </Hand>{" "}
-              I'm Tantely.
+              I'm <Name>Tantely</Name>.
             </h1>
             <Subtitle>Web Developer</Subtitle>
           </Titles>
@@ -68,7 +68,7 @@ const Main = () => {
           <h2>Connect with me and let's collaborate!</h2>
           <SocialLinks>
             <a
-              id="profile-link"
+              id="github-link"
               href="https://github.com/tantely-rabefarihy"
               target="_blank"
               rel="noreferrer"
@@ -81,6 +81,14 @@ const Main = () => {
               rel="noreferrer"
             >
               <Letr src={Letter} alt="letter-logo" />
+            </a>
+            <a
+              id="linkedin-link"
+              href="https://www.linkedin.com/in/tantely-rabefarihy/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Git src={LinkedIn} alt="linkedin-logo" />
             </a>
           </SocialLinks>
         </Collaboration>
@@ -97,6 +105,16 @@ const Hand = styled.span`
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
   will-change: transform;
+`
+
+const Name = styled.span`
+  background: linear-gradient(
+    275deg,
+    rgba(246, 209, 0, 1) 0%,
+    rgba(252, 64, 2, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `
 
 const MainContainer = styled.main`
@@ -157,7 +175,7 @@ const Subtitle = styled.p`
 const About = styled.div`
   width: 50%;
   align-self: flex-end;
-  /* transform: translateY(0px); */
+  transform: translateY(0px);
   opacity: 0;
   animation: ${SlideIn} 1s 0.5s forwards;
   animation-delay: 3s;
@@ -184,9 +202,10 @@ const ProjectsContainer = styled.section`
 `
 const Projects = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height: 100vh;
 
   @media only screen and (max-width: 568px) {
     flex-direction: column;
@@ -198,14 +217,20 @@ const Card = styled.div`
   align-self: center;
 
   img {
-    /* width: 100%; */
-    height: 10rem;
+    height: 15rem;
     border-radius: 5px;
+    width: 14rem;
+  }
+  @media only screen and (max-width: 568px) {
+    img {
+      height: 10rem;
+    }
   }
 `
 const Description = styled.p``
 
 const Collaboration = styled.section`
+  height: 50vh;
   h2 {
     text-align: center;
   }

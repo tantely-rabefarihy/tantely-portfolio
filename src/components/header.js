@@ -10,13 +10,13 @@ const NavBar = styled.nav`
 
   @media only screen and (max-width: 568px) {
   }
+`
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-  }
+const LinksContainer = styled.ul`
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 
   li {
     list-style-type: none;
@@ -38,7 +38,7 @@ const NavBar = styled.nav`
     transition: all 0.3s linear;
     position: relative;
 
-    :after {
+    &:after {
       background: none repeat scroll 0 0 transparent;
       top: 1.2rem;
       content: "";
@@ -46,11 +46,12 @@ const NavBar = styled.nav`
       height: 4px;
       left: 50%;
       position: absolute;
-      background: rgb(34, 32, 32);
+      background: black;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       width: 0;
     }
-    :hover:after {
+
+    &:hover:after {
       color: rgb(0, 0, 0);
       width: 100%;
       left: 0;
@@ -60,7 +61,6 @@ const NavBar = styled.nav`
 
 const Logo = styled.div`
   padding: 0.75rem;
-
   img {
     width: 3rem;
     height: 2rem;
@@ -72,9 +72,11 @@ const Header = () => {
     <>
       <NavBar>
         <Logo>
-          <img src={logo} alt="logo" />
+          <a href="/">
+            <img src={logo} alt="logo" />
+          </a>
         </Logo>
-        <ul>
+        <LinksContainer>
           <li>
             <a href="#welcome-section">About me</a>
           </li>
@@ -84,7 +86,7 @@ const Header = () => {
           <li>
             <a href="#collaboration">Contact</a>
           </li>
-        </ul>
+        </LinksContainer>
       </NavBar>
     </>
   )
