@@ -34,6 +34,13 @@ const Main = () => {
           </About>
         </Welcome>
 
+        <section>
+          <h2>My skills</h2>
+          <div>
+            <p></p>
+          </div>
+        </section>
+
         <ProjectsSection>
           <h2>These are some of my projects</h2>
           <Projects id="projects">
@@ -49,8 +56,12 @@ const Main = () => {
                     alt="project"
                   />
                 </a>
-                <Description>Covid tracker app</Description>
+                <Caption>Covid tracker app</Caption>
               </Card>
+              <Description>
+                A web app to tracks worldwide numbers related to the COVID
+                situation.
+              </Description>
             </ProjectBox>
             <ProjectBox>
               <Card>
@@ -64,8 +75,11 @@ const Main = () => {
                     alt="project2"
                   />
                 </a>
-                <Description>Cocktail corner</Description>
+                <Caption>Cocktail corner</Caption>
               </Card>
+              <Description>
+                A cocktail library to search for a recipe.
+              </Description>
             </ProjectBox>
           </Projects>
         </ProjectsSection>
@@ -186,8 +200,8 @@ const MyPicture = styled.img`
   border-radius: 50%;
 
   @media only screen and (max-width: 568px) {
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
   }
 `
 
@@ -225,19 +239,16 @@ const ProjectsSection = styled.section`
     text-align: center;
     padding-bottom: 1rem;
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 1.5em;
   }
 `
 const Projects = styled.div`
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
-  height: 100vh;
 
   @media only screen and (max-width: 568px) {
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 `
 
@@ -245,11 +256,19 @@ const ProjectBox = styled.div`
   background-color: white;
   border-radius: 8px;
   display: flex;
-  flex-direction: row;
+  padding: 1rem;
+  flex-direction: column;
+
+  width: 20rem;
+
+  @media only screen and (max-width: 568px) {
+    width: 100%;
+    margin: 1rem;
+  }
 `
 
 const Card = styled.div`
-  align-self: center;
+  /* align-self: center; */
 
   img {
     height: 15rem;
@@ -259,13 +278,17 @@ const Card = styled.div`
   @media only screen and (max-width: 568px) {
     img {
       height: 10rem;
-      width: auto;
+      width: 100%;
     }
   }
 `
-const Description = styled.p`
+const Caption = styled.p`
   font-size: 1rem;
   font-weight: bolder;
+`
+
+const Description = styled.p`
+  padding: 0 2rem;
 `
 
 const Collaboration = styled.section`
