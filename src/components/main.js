@@ -66,6 +66,10 @@ const Main = () => {
         </ProjectsContainer>
         <Collaboration id="collaboration">
           <h2>Connect with me and let's collaborate!</h2>
+          <p>
+            Reach out to me anytime if you're looking a web developer or just
+            want to connect.
+          </p>
           <SocialLinks>
             <a
               id="github-link"
@@ -218,12 +222,13 @@ const Card = styled.div`
 
   img {
     height: 15rem;
+    width: 20rem;
     border-radius: 5px;
-    width: 14rem;
   }
   @media only screen and (max-width: 568px) {
     img {
       height: 10rem;
+      width: auto;
     }
   }
 `
@@ -231,6 +236,7 @@ const Description = styled.p``
 
 const Collaboration = styled.section`
   height: 50vh;
+  text-align: center;
   h2 {
     text-align: center;
   }
