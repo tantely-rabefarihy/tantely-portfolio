@@ -4,7 +4,7 @@ import Github from "../images/github_logo.svg"
 import Letter from "../images/letter_logo.svg"
 import LinkedIn from "../images/linkedin.svg"
 import { EmojiMoving, SlideIn } from "../styles/Animations"
-
+import profile from "../images/profile-pic.png"
 const Main = () => {
   return (
     <>
@@ -21,6 +21,7 @@ const Main = () => {
             <Subtitle>Web Developer</Subtitle>
           </Titles>
           <About>
+            <MyPicture src={profile} alt="profile_picture" />
             <p>
               I'm baby adaptogen fingerstache drinking vinegar organic direct
               trade skateboard butcher cronut chillwave, offal live-edge roof
@@ -33,42 +34,46 @@ const Main = () => {
           </About>
         </Welcome>
 
-        <ProjectsContainer>
+        <ProjectsSection>
           <h2>These are some of my projects</h2>
           <Projects id="projects">
-            <Card>
-              <a
-                href="https://github.com/tantely-rabefarihy/covid19-app-tracker"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="https://github.com/tantely-rabefarihy/covid19-app-tracker/raw/main/client/screenshots/Covid-app.png"
-                  alt="project"
-                />
-              </a>
-              <Description>Covid tracker app</Description>
-            </Card>
-            <Card>
-              <a
-                href="https://github.com/tantely-rabefarihy/cocktailDB"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src="https://github.com/tantely-rabefarihy/cocktailDB/raw/main/src/assets/cocktailDB.png"
-                  alt="project2"
-                />
-              </a>
-              <Description>Cocktail corner</Description>
-            </Card>
+            <ProjectBox>
+              <Card>
+                <a
+                  href="https://github.com/tantely-rabefarihy/covid19-app-tracker"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="https://github.com/tantely-rabefarihy/covid19-app-tracker/raw/main/client/screenshots/Covid-app.png"
+                    alt="project"
+                  />
+                </a>
+                <Description>Covid tracker app</Description>
+              </Card>
+            </ProjectBox>
+            <ProjectBox>
+              <Card>
+                <a
+                  href="https://github.com/tantely-rabefarihy/cocktailDB"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src="https://github.com/tantely-rabefarihy/cocktailDB/raw/main/src/assets/cocktailDB.png"
+                    alt="project2"
+                  />
+                </a>
+                <Description>Cocktail corner</Description>
+              </Card>
+            </ProjectBox>
           </Projects>
-        </ProjectsContainer>
+        </ProjectsSection>
         <Collaboration id="collaboration">
           <h2>Connect with me and let's collaborate!</h2>
           <p>
-            Reach out to me anytime if you're looking a web developer or just
-            want to connect.
+            Reach out to me anytime if you're looking for a web developer or
+            just want to connect.
           </p>
           <SocialLinks>
             <a
@@ -175,10 +180,23 @@ const Subtitle = styled.p`
     font-size: 1.2rem;
   }
 `
+const MyPicture = styled.img`
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+
+  @media only screen and (max-width: 568px) {
+    width: 8rem;
+    height: 8rem;
+  }
+`
 
 const About = styled.div`
-  width: 50%;
-  align-self: flex-end;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   transform: translateY(0px);
   opacity: 0;
   animation: ${SlideIn} 1s 0.5s forwards;
@@ -186,22 +204,28 @@ const About = styled.div`
 
   p {
     font-size: 1rem;
+    width: 20rem;
   }
 
   @media only screen and (max-width: 568px) {
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
     p {
       font-size: 0.75rem;
+      width: 100%;
     }
   }
 `
 
-const ProjectsContainer = styled.section`
+const ProjectsSection = styled.section`
   padding-top: 2rem;
   h2 {
     color: rgb(0, 0, 0);
     text-align: center;
     padding-bottom: 1rem;
+    font-weight: bolder;
+    font-size: 2rem;
   }
 `
 const Projects = styled.div`
@@ -215,6 +239,13 @@ const Projects = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
   }
+`
+
+const ProjectBox = styled.div`
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
 `
 
 const Card = styled.div`
@@ -232,7 +263,10 @@ const Card = styled.div`
     }
   }
 `
-const Description = styled.p``
+const Description = styled.p`
+  font-size: 1rem;
+  font-weight: bolder;
+`
 
 const Collaboration = styled.section`
   height: 50vh;
