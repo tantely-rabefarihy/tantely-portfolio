@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import Github from "../images/github_logo.svg"
 import Letter from "../images/letter_logo.svg"
@@ -46,16 +47,12 @@ const Main = () => {
           <Projects id="projects">
             <ProjectBox>
               <Card>
-                <a
-                  href="https://github.com/tantely-rabefarihy/covid19-app-tracker"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <Link to="/covid">
                   <img
                     src="https://github.com/tantely-rabefarihy/covid19-app-tracker/raw/main/client/screenshots/Covid-app.png"
                     alt="project"
                   />
-                </a>
+                </Link>
                 <Caption>Covid tracker app</Caption>
               </Card>
               <Description>
@@ -65,16 +62,12 @@ const Main = () => {
             </ProjectBox>
             <ProjectBox>
               <Card>
-                <a
-                  href="https://github.com/tantely-rabefarihy/cocktailDB"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <Link to="/cocktail">
                   <img
                     src="https://github.com/tantely-rabefarihy/cocktailDB/raw/main/src/assets/cocktailDB.png"
                     alt="project2"
                   />
-                </a>
+                </Link>
                 <Caption>Cocktail corner</Caption>
               </Card>
               <Description>
@@ -96,7 +89,7 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Git src={Github} alt="github-logo" />
+              <SocialLogo src={Github} alt="github-logo" />
             </a>
             <a
               id="email-link"
@@ -111,7 +104,7 @@ const Main = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Git src={LinkedIn} alt="linkedin-logo" />
+              <SocialLogo src={LinkedIn} alt="linkedin-logo" />
             </a>
           </SocialLinks>
         </Collaboration>
@@ -132,9 +125,9 @@ const Hand = styled.span`
 
 const Name = styled.span`
   background: linear-gradient(
-    275deg,
-    rgba(246, 209, 0, 1) 0%,
-    rgba(252, 64, 2, 1) 100%
+    274deg,
+    rgba(246, 183, 0, 1) 0%,
+    rgba(252, 2, 2, 1) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -233,7 +226,7 @@ const About = styled.div`
 `
 
 const ProjectsSection = styled.section`
-  padding-top: 2rem;
+  margin: 2rem 0;
   h2 {
     color: rgb(0, 0, 0);
     text-align: center;
@@ -242,6 +235,7 @@ const ProjectsSection = styled.section`
     font-size: 1.5em;
   }
 `
+
 const Projects = styled.div`
   display: flex;
   flex-wrap: nowrap;
@@ -258,8 +252,32 @@ const ProjectBox = styled.div`
   display: flex;
   padding: 1rem;
   flex-direction: column;
-
   width: 20rem;
+  position: relative; /* For positioning the pseudo-element */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  will-change: transform;
+
+  &::after {
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 8px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+
+  &:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.05, 1.05);
+    transform: scale(1.05, 1.05);
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
 
   @media only screen and (max-width: 568px) {
     width: 100%;
@@ -268,8 +286,6 @@ const ProjectBox = styled.div`
 `
 
 const Card = styled.div`
-  /* align-self: center; */
-
   img {
     height: 15rem;
     width: 20rem;
@@ -285,6 +301,7 @@ const Card = styled.div`
 const Caption = styled.p`
   font-size: 1rem;
   font-weight: bolder;
+  text-align: center;
 `
 
 const Description = styled.p`
@@ -308,9 +325,9 @@ const SocialLinks = styled.div`
     padding: 0 0.5rem;
   }
 `
-const Git = styled.img`
+const SocialLogo = styled.img`
   width: 2rem;
   height: 2rem;
 `
 
-const Letr = styled(Git)``
+const Letr = styled(SocialLogo)``

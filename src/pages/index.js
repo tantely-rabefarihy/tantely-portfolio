@@ -7,7 +7,7 @@ import GlobalStyle from "../styles/globalstyles"
 import Main from "../components/main"
 import { ParticleContainer } from "../styles/particle"
 
-const Page = () => (
+const HomePage = () => (
   <>
     <Helmet>
       <title>Tantely Rabefarihy - Full Stack Developer</title>
@@ -26,4 +26,4 @@ const Page = () => (
   </>
 )
 
-export default Page
+export default HomePage

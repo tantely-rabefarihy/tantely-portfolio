@@ -28,7 +28,7 @@ const LinksContainer = styled.ul`
   a {
     text-decoration: none;
     color: black;
-    font-size: 0.8rem;
+    font-size: 1.5em;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
     /* underline effect for the links */
