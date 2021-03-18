@@ -21,7 +21,7 @@ const LinksContainer = styled.ul`
   li {
     list-style-type: none;
     display: flex;
-    padding-right: 1.5rem;
+    padding-right: 4rem;
     align-self: center;
   }
 
@@ -31,6 +31,7 @@ const LinksContainer = styled.ul`
     font-size: 1.5em;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
+
     /* underline effect for the links */
     text-transform: capitalize;
     display: inline-block;
@@ -40,7 +41,7 @@ const LinksContainer = styled.ul`
 
     &:after {
       background: none repeat scroll 0 0 transparent;
-      top: 1.2rem;
+      top: 2rem;
       content: "";
       display: block;
       height: 4px;

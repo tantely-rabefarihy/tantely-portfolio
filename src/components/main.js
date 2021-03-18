@@ -34,12 +34,42 @@ const Main = () => {
             </p>
           </About>
         </Welcome>
-
         <section>
-          <h2>My skills</h2>
-          <div>
-            <p></p>
-          </div>
+          <h2>Skills</h2>
+          <SkillsRows>
+            <row>
+              <p>
+                <span>&#9675;</span> Javascript ES6+
+              </p>
+              <p>
+                <span>&#9675;</span> HTML & CSS
+              </p>
+            </row>
+            <row>
+              <p>
+                <span>&#9675;</span> React
+              </p>
+              <p>
+                <span>&#9675;</span> Redux
+              </p>
+            </row>
+            <row>
+              <p>
+                <span>&#9675;</span> Node.js
+              </p>
+              <p>
+                <span>&#9675;</span> MongoDB
+              </p>
+            </row>
+            <row>
+              <p>
+                <span>&#9675;</span> Firebase
+              </p>
+              <p>
+                <span>&#9675;</span> Styled-Components
+              </p>
+            </row>
+          </SkillsRows>
         </section>
 
         <ProjectsSection>
@@ -129,6 +159,7 @@ const Name = styled.span`
     rgba(246, 183, 0, 1) 0%,
     rgba(252, 2, 2, 1) 100%
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 `
@@ -223,6 +254,11 @@ const About = styled.div`
       width: 100%;
     }
   }
+`
+
+const SkillsRows = styled.div`
+  display: flex;
+  justify-content: space-evenly;
 `
 
 const ProjectsSection = styled.section`
