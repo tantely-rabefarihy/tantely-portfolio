@@ -1,11 +1,10 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import Helmet from "react-helmet"
-import Header from "../components/header"
+import NavBar from "../components/header/navbar"
 import GlobalStyle from "../styles/globalstyles"
 import Main from "../components/main"
-import { ParticleContainer } from "../styles/particle"
+// import { ParticleContainer } from "../styles/particle"
 
 const HomePage = () => (
   <>
@@ -20,7 +19,7 @@ const HomePage = () => (
     </Helmet>
     <GlobalStyle />
     <Layout>
-      <Header />
+      <NavBar />
       <Main />
     </Layout>
   </>

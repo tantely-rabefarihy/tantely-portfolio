@@ -34,7 +34,7 @@ const Main = () => {
             </p>
           </About>
         </Welcome>
-        <section>
+        <SkillsSection>
           <h2>Skills</h2>
           <SkillsRows>
             <row>
@@ -70,7 +70,7 @@ const Main = () => {
               </p>
             </row>
           </SkillsRows>
-        </section>
+        </SkillsSection>
 
         <ProjectsSection>
           <h2>These are some of my projects</h2>
@@ -256,9 +256,18 @@ const About = styled.div`
   }
 `
 
+const SkillsSection = styled.section`
+  h2 {
+    text-align: center;
+  }
+`
+
 const SkillsRows = styled.div`
   display: flex;
   justify-content: space-evenly;
+  @media only screen and (max-width: 568px) {
+    flex-direction: column;
+  }
 `
 
 const ProjectsSection = styled.section`

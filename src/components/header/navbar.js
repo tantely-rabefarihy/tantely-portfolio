@@ -1,8 +1,9 @@
+import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
-import logo from "../images/logo_tantely.svg"
+import logo from "../../images/logo_tantely.svg"
 
-const NavBar = styled.nav`
+const Nav = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -28,7 +29,7 @@ const LinksContainer = styled.ul`
   a {
     text-decoration: none;
     color: black;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
 
@@ -68,14 +69,14 @@ const Logo = styled.div`
   }
 `
 
-const Header = () => {
+const NavBar = () => {
   return (
     <>
-      <NavBar>
+      <Nav>
         <Logo>
-          <a href="/">
+          <Link to="/">
             <img src={logo} alt="logo" />
-          </a>
+          </Link>
         </Logo>
         <LinksContainer>
           <li>
@@ -88,9 +89,9 @@ const Header = () => {
             <a href="#collaboration">Contact</a>
           </li>
         </LinksContainer>
-      </NavBar>
+      </Nav>
     </>
   )
 }
 
-export default Header
+export default NavBar
