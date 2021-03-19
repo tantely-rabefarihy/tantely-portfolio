@@ -6,6 +6,7 @@ import Letter from "../images/letter_logo.svg"
 import LinkedIn from "../images/linkedin.svg"
 import { EmojiMoving, SlideIn } from "../styles/Animations"
 import profile from "../images/profile-pic.png"
+
 const Main = () => {
   return (
     <>
@@ -86,7 +87,7 @@ const Main = () => {
                 <Caption>Covid tracker app</Caption>
               </Card>
               <Description>
-                A web app to tracks worldwide numbers related to the COVID
+                A web app to track worldwide numbers related to the COVID
                 situation.
               </Description>
             </ProjectBox>
@@ -165,6 +166,8 @@ const Name = styled.span`
 `
 
 const MainContainer = styled.main`
+  position: absolute;
+  z-index: -1;
   display: flex;
   flex-direction: column;
   padding: 0 1rem;

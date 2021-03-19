@@ -11,7 +11,7 @@ h1,
 h2 {
   font-family: "Questrial", sans-serif;
 }
-p {
+p, a {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -21,9 +21,9 @@ body {
     min-width: 100%;
     min-height: 100%;
     color: black;
-     background: #b9bcc0;
-/* background: linear-gradient(180deg, rgba(228,228,228,1) 0%, rgba(154,154,154,1) 80%); */ 
-/* background: linear-gradient(45deg, #ffffff, #b9bcc0); */
+    background: #b9bcc0;
+
+
 }
 
 `

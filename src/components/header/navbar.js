@@ -2,15 +2,13 @@ import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
 import logo from "../../images/logo_tantely.svg"
+import Burger from "./Burger/Burger"
 
 const Nav = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: transparent;
-
-  @media only screen and (max-width: 568px) {
-  }
 `
 
 const LinksContainer = styled.ul`
@@ -19,11 +17,19 @@ const LinksContainer = styled.ul`
   margin: 0;
   padding: 0;
 
+  @media only screen and (max-width: 568px) {
+    display: none;
+  }
+
   li {
     list-style-type: none;
     display: flex;
     padding-right: 4rem;
     align-self: center;
+
+    @media only screen and (max-width: 568px) {
+      padding-right: 1rem;
+    }
   }
 
   a {
@@ -39,6 +45,10 @@ const LinksContainer = styled.ul`
     letter-spacing: 1px;
     transition: all 0.3s linear;
     position: relative;
+
+    @media only screen and (max-width: 568px) {
+      font-size: 0.75em;
+    }
 
     &:after {
       background: none repeat scroll 0 0 transparent;
@@ -62,10 +72,10 @@ const LinksContainer = styled.ul`
 `
 
 const Logo = styled.div`
-  padding: 0.75rem;
+  padding-left: 0.75rem;
   img {
-    width: 3rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
   }
 `
 
@@ -78,6 +88,8 @@ const NavBar = () => {
             <img src={logo} alt="logo" />
           </Link>
         </Logo>
+
+        <Burger />
         <LinksContainer>
           <li>
             <a href="#welcome-section">About me</a>
