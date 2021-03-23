@@ -73,7 +73,12 @@ const Main = () => {
           </SkillsRows>
         </SkillsSection>
 
-        <ProjectsSection>
+        <ProjectsSection
+          data-sal="slide-up"
+          data-sal-delay="5"
+          data-sal-duration="500"
+          data-sal-easing="ease-in"
+        >
           <h2>These are some of my projects</h2>
           <Projects id="projects">
             <ProjectBox>
@@ -166,7 +171,7 @@ const Name = styled.span`
 `
 
 const MainContainer = styled.main`
-  position: absolute;
+  /* position: absolute; */
   z-index: -1;
   display: flex;
   flex-direction: column;
@@ -189,7 +194,6 @@ const Welcome = styled.section`
 const Titles = styled.div`
   margin: 0 auto;
   flex-direction: column;
-  /* transform: translateY(0px); */
   opacity: 0;
   animation: ${SlideIn} 1s 0.5s forwards;
 

@@ -48,31 +48,33 @@ const Burger = () => {
 export default Burger
 
 const BurgerContainer = styled.div`
-  display: none;
+  /* display: none; */
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    display: flex;
     position: relative;
-    z-index: 1;
+    z-index: 20;
   }
 `
 
 const Menu = styled.div`
+  display: none;
   @media (max-width: ${({ theme }) => theme.mobile}) {
+    display: flex;
   }
 `
 
 const LinksContainer = styled.div`
   display: flex;
+  z-index: 10;
   background-color: white;
   flex-direction: column;
   justify-content: center;
   color: black;
-  position: absolute;
+  position: fixed;
   width: 50vw;
   height: 100vh;
   top: 0;
   right: 0;
-  transform: ${({ isOpen }) => (isOpen ? "translateX(0)" : "translateX(200%)")};
+  transform: ${({ isOpen }) => (isOpen ? "translateX(0)" : "translateX(100%)")};
   transition: transform 0.3s ease-in-out;
 
   a {

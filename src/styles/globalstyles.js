@@ -16,6 +16,7 @@ p, a {
 }
 
 body {
+    position:absolute;
     margin:0;
     padding:0;
     min-width: 100%;

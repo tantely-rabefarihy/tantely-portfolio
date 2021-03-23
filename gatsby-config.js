@@ -5,6 +5,7 @@ module.exports = {
     author: `@tantely_rabefarihy`,
   },
   plugins: [
+    `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
