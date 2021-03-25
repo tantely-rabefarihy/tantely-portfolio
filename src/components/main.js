@@ -25,19 +25,18 @@ const Main = () => {
           <About
             className="about-animation"
             data-sal="fade"
-            // data-sal-delay=""
             data-sal-duration="1000"
             data-sal-easing="easeOutCubic"
           >
             <MyPicture src={profile} alt="profile_picture" />
             <p>
-              I'm baby adaptogen fingerstache drinking vinegar organic direct
-              trade skateboard butcher cronut chillwave, offal live-edge roof
-              party kombucha iceland woke. 8-bit copper mug mixtape, biodiesel
-              poutine pitchfork paleo. Hoodie fashion axe chia, blog kitsch tote
-              bag everyday carry. Disrupt asymmetrical tbh, unicorn before they
-              sold out distillery activated charcoal artisan twee occupy
-              microdosing YOLO celiac waistcoat.
+              My country of origin is Madagascar <span>🇲🇬</span> (yes! like the
+              movie but it does not do justice to the real one). After
+              travelling to three continents, I have finally settled in Montreal
+              (Quebec, Canada). I have an atypical profile as I am not
+              originally from a computer science background. Before doing the
+              career shift, I was working in the hospitality / customer service
+              industry.
             </p>
           </About>
         </Welcome>
