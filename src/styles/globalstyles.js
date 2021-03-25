@@ -8,7 +8,7 @@ html {
 }
 
 h1,
-h2 {
+h2, h3 {
   font-family: "Questrial", sans-serif;
 }
 p, a {
@@ -22,8 +22,8 @@ body {
     min-width: 100%;
     min-height: 100%;
     color: black;
-    background: #b9bcc0;
-
+    /* background: #b9bcc0; */
+    background: #F6F6F4;
 
 }
 

@@ -22,7 +22,13 @@ const Main = () => {
             </h1>
             <Subtitle>Web Developer</Subtitle>
           </Titles>
-          <About>
+          <About
+            className="about-animation"
+            data-sal="fade"
+            // data-sal-delay=""
+            data-sal-duration="1000"
+            data-sal-easing="easeOutCubic"
+          >
             <MyPicture src={profile} alt="profile_picture" />
             <p>
               I'm baby adaptogen fingerstache drinking vinegar organic direct
@@ -35,7 +41,11 @@ const Main = () => {
             </p>
           </About>
         </Welcome>
-        <SkillsSection>
+        <SkillsSection
+          data-sal="fade"
+          data-sal-duration="1000"
+          data-sal-easing="easeOutCubic"
+        >
           <h2>Skills</h2>
           <SkillsRows>
             <row>
@@ -74,10 +84,9 @@ const Main = () => {
         </SkillsSection>
 
         <ProjectsSection
-          data-sal="slide-up"
-          data-sal-delay="5"
-          data-sal-duration="500"
-          data-sal-easing="ease-in"
+          data-sal="fade"
+          data-sal-duration="1000"
+          data-sal-easing="easeOutCubic"
         >
           <h2>These are some of my projects</h2>
           <Projects id="projects">
@@ -177,6 +186,7 @@ const MainContainer = styled.main`
   flex-direction: column;
   padding: 0 1rem;
   @media only screen and (max-width: 568px) {
+    /* margin-top: 5rem; */
   }
 `
 const Welcome = styled.section`
@@ -187,13 +197,15 @@ const Welcome = styled.section`
   height: 100vh;
 
   @media only screen and (max-width: 568px) {
-    height: 80vh;
+    height: fit-content;
   }
 `
 
 const Titles = styled.div`
+  display: flex;
   margin: 0 auto;
   flex-direction: column;
+  transform: translateY(30px);
   opacity: 0;
   animation: ${SlideIn} 1s 0.5s forwards;
 
@@ -205,12 +217,14 @@ const Titles = styled.div`
   }
 
   @media only screen and (max-width: 568px) {
+    justify-content: center;
+    height: 90vh;
+    text-align: left;
     h1 {
-      font-size: 2rem;
+      font-size: 3rem;
+      text-align: left;
+      line-height: 4rem;
     }
-
-    align-items: center;
-    text-align: center;
   }
 `
 
@@ -221,8 +235,8 @@ const Subtitle = styled.p`
   font-weight: light;
 
   @media only screen and (max-width: 568px) {
-    text-align: center;
     font-size: 1.2rem;
+    text-align: left;
   }
 `
 const MyPicture = styled.img`
@@ -237,25 +251,26 @@ const MyPicture = styled.img`
 `
 
 const About = styled.div`
+  align-items: center;
+  text-align: justify;
   width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  transform: translateY(0px);
-  opacity: 0;
-  animation: ${SlideIn} 1s 0.5s forwards;
-  animation-delay: 3s;
+  /* transform: translateY(30px);
+  opacity: 0; */
+  /* animation: ${SlideIn} 1s 0.5s forwards;
+  animation-delay: 3s; */
 
   p {
     font-size: 1rem;
     width: 20rem;
+    line-height: 1.5rem;
   }
 
   @media only screen and (max-width: 568px) {
     flex-direction: column;
-    align-items: center;
-
     p {
       font-size: 0.75rem;
       width: 100%;

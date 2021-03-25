@@ -1,8 +1,7 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components"
-import logo from "../../images/logo_tantely.svg"
 import Burger from "./Burger/Burger"
+import Logo from "../logo"
 
 const Nav = styled.nav`
   display: flex;
@@ -71,24 +70,11 @@ const LinksContainer = styled.ul`
   }
 `
 
-const Logo = styled.div`
-  padding-left: 0.75rem;
-  img {
-    width: 4rem;
-    height: 4rem;
-  }
-`
-
 const NavBar = () => {
   return (
     <>
       <Nav>
-        <Logo>
-          <Link to="/">
-            <img src={logo} alt="logo" />
-          </Link>
-        </Logo>
-
+        <Logo />
         <Burger />
         <LinksContainer>
           <li>

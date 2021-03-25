@@ -30,11 +30,11 @@ export const EmojiMoving = keyframes`
 
 export const SlideIn = keyframes`
   from {
-    transform: translateY(0);
+    transform: translateY(30px);
     opacity: 0;
   }
   to {
-    transform: translateY(30px);
+    transform: translateY(0);
     opacity: 1;
   }
 `

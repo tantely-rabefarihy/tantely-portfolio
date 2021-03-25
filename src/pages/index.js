@@ -6,7 +6,6 @@ import GlobalStyle from "../styles/globalstyles"
 import Main from "../components/main"
 import { theme } from "../styles/theme"
 import { ThemeProvider } from "styled-components"
-// import { ParticleContainer } from "../styles/particle"
 
 const HomePage = () => (
   <ThemeProvider theme={theme}>
