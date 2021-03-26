@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import { theme } from "./theme"
 
 const GlobalStyle = createGlobalStyle`
 
@@ -22,8 +23,7 @@ body {
     min-width: 100%;
     min-height: 100%;
     color: black;
-    /* background: #b9bcc0; */
-    background: #F6F6F4;
+    background: ${theme.primaryLight};
 
 }
 

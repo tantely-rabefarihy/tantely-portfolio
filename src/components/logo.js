@@ -4,8 +4,8 @@ import { Link } from "gatsby"
 import pageLogo from "../images/logo_tantely.svg"
 
 const LogoContainer = styled.div`
-  padding-left: 0.75rem;
   img {
+    padding-left: 0.75rem;
     width: 4rem;
     height: 4rem;
   }

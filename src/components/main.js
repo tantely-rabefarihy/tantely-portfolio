@@ -15,7 +15,7 @@ const Main = () => {
           <Titles>
             <h1>
               Hey there{" "}
-              <Hand role="img" aria-label="hand emoji">
+              <Hand role="img" aria-label="hand">
                 👋🏼
               </Hand>{" "}
               I'm <Name>Tantely</Name>.
@@ -30,10 +30,13 @@ const Main = () => {
           >
             <MyPicture src={profile} alt="profile_picture" />
             <p>
-              My country of origin is Madagascar <span>🇲🇬</span> (yes! like the
-              movie but it does not do justice to the real one). After
-              travelling to three continents, I have finally settled in Montreal
-              (Quebec, Canada). I have an atypical profile as I am not
+              My country of origin is Madagascar{" "}
+              <span role="img" aria-label="flag">
+                🇲🇬
+              </span>{" "}
+              (yes! like the movie but it does not do justice to the real one).
+              After travelling to three continents, I have finally settled in
+              Montreal (Quebec, Canada). I have an atypical profile as I am not
               originally from a computer science background. Before doing the
               career shift, I was working in the hospitality / customer service
               industry.
@@ -284,10 +287,18 @@ const SkillsSection = styled.section`
 `
 
 const SkillsRows = styled.div`
+  padding: 0 1rem;
   display: flex;
   justify-content: space-evenly;
   @media only screen and (max-width: 568px) {
     flex-direction: column;
+    column-count: 2;
+    column-gap: 2rem;
+    -webkit-columns: 40px 2;
+    /* Chrome, Safari, Opera */
+    -moz-columns: 60px 2;
+    /* Firefox */
+    columns: 60px 2;
   }
 `
 
