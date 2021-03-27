@@ -78,7 +78,7 @@ const NavBar = () => {
         <Burger />
         <LinksContainer>
           <li>
-            <a href="#welcome-section">About me</a>
+            <a href="#about">About me</a>
           </li>
           <li>
             <a href="#projects">Work</a>

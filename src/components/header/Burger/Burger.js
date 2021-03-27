@@ -30,13 +30,13 @@ const Burger = () => {
         </BurgerContainer>
 
         <LinksContainer isOpen={isOpen}>
-          <a id="about" href="#welcome-section" onClick={() => handleClose()}>
+          <a href="#about" onClick={() => handleClose()}>
             About me
           </a>
-          <a id="workout" href="#projects" onClick={() => handleClose()}>
+          <a href="#projects" onClick={() => handleClose()}>
             Work
           </a>
-          <a id="contact" href="#collaboration" onClick={() => handleClose()}>
+          <a href="#collaboration" onClick={() => handleClose()}>
             Contact
           </a>
         </LinksContainer>
@@ -68,7 +68,7 @@ const LinksContainer = styled.div`
   background-color: white;
   flex-direction: column;
   justify-content: center;
-  color: black;
+  color: ${({ theme }) => theme.PrimaryFontColor};
   position: fixed;
   width: 50vw;
   height: 100vh;
@@ -79,17 +79,23 @@ const LinksContainer = styled.div`
 
   a {
     font-size: 4rem;
+    width: fit-content;
+    margin: 0 auto;
     padding: 2rem 0;
-    color: ${({ theme }) => theme.PrimaryFontColor};
+    color: black;
     text-decoration: none;
-    transition: color 0.3s linear;
+    /* transition: color 0.3s linear; */
     font-weight: bolder;
+    transition: transform 0.5s;
+    will-change: transform;
+
     @media (max-width: ${({ theme }) => theme.mobile}) {
       font-size: 1.5rem;
       text-align: center;
     }
+
     &:hover {
-      color: ${({ theme }) => theme.PrimaryFontColor};
+      transform: scale(1.1);
     }
   }
 `

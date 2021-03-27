@@ -17,16 +17,18 @@ const Main = () => {
               Hey there{" "}
               <Hand role="img" aria-label="hand">
                 👋🏼
-              </Hand>{" "}
+              </Hand>
+              <br></br>
               I'm <Name>Tantely</Name>.
             </h1>
             <Subtitle>Web Developer</Subtitle>
           </Titles>
           <About
             className="about-animation"
-            data-sal="fade"
+            data-sal="slide-up"
             data-sal-duration="1000"
             data-sal-easing="easeOutCubic"
+            id="about"
           >
             <MyPicture src={profile} alt="profile_picture" />
             <p>
@@ -34,17 +36,18 @@ const Main = () => {
               <span role="img" aria-label="flag">
                 🇲🇬
               </span>{" "}
-              (yes! like the movie but it does not do justice to the real one).
+              (yes! Like the movie but it does not do justice to the real one).
               After travelling to three continents, I have finally settled in
               Montreal (Quebec, Canada). I have an atypical profile as I am not
-              originally from a computer science background. Before doing the
-              career shift, I was working in the hospitality / customer service
-              industry.
+              originally from a computer science background. Before my career
+              shift, I was working in the hospitality / customer service
+              industry. I am now looking to have a positive impact on people's
+              lives through creative websites and apps.
             </p>
           </About>
         </Welcome>
         <SkillsSection
-          data-sal="fade"
+          data-sal="slide-up"
           data-sal-duration="1000"
           data-sal-easing="easeOutCubic"
         >
@@ -85,14 +88,14 @@ const Main = () => {
           </SkillsRows>
         </SkillsSection>
 
-        <ProjectsSection
-          data-sal="fade"
-          data-sal-duration="1000"
-          data-sal-easing="easeOutCubic"
-        >
+        <ProjectsSection>
           <h2>These are some of my projects</h2>
           <Projects id="projects">
-            <ProjectBox>
+            <ProjectBox
+              data-sal="slide-up"
+              data-sal-duration="1000"
+              data-sal-easing="easeOutCubic"
+            >
               <Card>
                 <Link to="/covid">
                   <img
@@ -107,7 +110,11 @@ const Main = () => {
                 situation.
               </Description>
             </ProjectBox>
-            <ProjectBox>
+            <ProjectBox
+              data-sal="slide-up"
+              data-sal-duration="1000"
+              data-sal-easing="easeOutCubic"
+            >
               <Card>
                 <Link to="/cocktail">
                   <img

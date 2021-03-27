@@ -2,8 +2,8 @@
 export const theme = {
   primaryDark: "#b9bcc0",
   secondaryDark: "#424651",
-  primaryFontColor: "black",
+  primaryFontColor: "#000",
   primaryLight: "#F4F3EE",
-  primaryHover: "#f4f7fb",
+  primaryHover: "#4F5050",
   mobile: "576px",
 }
