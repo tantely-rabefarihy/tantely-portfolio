@@ -22,13 +22,7 @@ const Covid = () => {
               University. I wanted to create a web app to track the covid
               situation all over the world with some key numbers.
             </p>
-            <div
-              style={{
-                display: "flex",
-                "max-width": "600px",
-                margin: "0 auto",
-              }}
-            >
+            <LinksContainer>
               <ProjectLink>
                 <a
                   className="arrow"
@@ -49,7 +43,7 @@ const Covid = () => {
                   Repository
                 </a>
               </GithubLink>
-            </div>
+            </LinksContainer>
 
             <PurposeContainer className="project-section">
               <h3>Purpose</h3>
@@ -158,6 +152,12 @@ const SubContainer = styled.main`
   margin: 0 1rem;
 `
 const Title = styled.h1``
+
+const LinksContainer = styled.div`
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+`
 
 const ProjectLink = styled.p`
   text-align: center;
@@ -281,7 +281,6 @@ const Stack = styled.div`
   -moz-columns: 60px 2;
   /* Firefox */
   columns: 60px 2;
-
   margin: 0 auto;
 `
 

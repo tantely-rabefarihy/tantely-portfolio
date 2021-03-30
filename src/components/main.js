@@ -52,40 +52,37 @@ const Main = () => {
           data-sal-easing="easeOutCubic"
         >
           <h2>Skills</h2>
-          <SkillsRows>
-            <row>
+          <div style={{ margin: "0 auto" }}>
+            <SkillsRows>
               <p>
                 <span>&#9675;</span> Javascript ES6+
               </p>
               <p>
                 <span>&#9675;</span> HTML & CSS
               </p>
-            </row>
-            <row>
+
               <p>
                 <span>&#9675;</span> React
               </p>
               <p>
                 <span>&#9675;</span> Redux
               </p>
-            </row>
-            <row>
+
               <p>
                 <span>&#9675;</span> Node.js
               </p>
               <p>
                 <span>&#9675;</span> MongoDB
               </p>
-            </row>
-            <row>
+
               <p>
                 <span>&#9675;</span> Firebase
               </p>
               <p>
                 <span>&#9675;</span> Styled-Components
               </p>
-            </row>
-          </SkillsRows>
+            </SkillsRows>
+          </div>
         </SkillsSection>
 
         <ProjectsSection>
@@ -189,11 +186,11 @@ const Name = styled.span`
 `
 
 const MainContainer = styled.main`
-  /* position: absolute; */
   z-index: -1;
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
+
   @media only screen and (max-width: 568px) {
     /* margin-top: 5rem; */
   }
@@ -267,10 +264,6 @@ const About = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /* transform: translateY(30px);
-  opacity: 0; */
-  /* animation: ${SlideIn} 1s 0.5s forwards;
-  animation-delay: 3s; */
 
   p {
     font-size: 1rem;
@@ -294,18 +287,23 @@ const SkillsSection = styled.section`
 `
 
 const SkillsRows = styled.div`
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-evenly;
+  width: calc(100vw / 3);
+  margin: 0 auto;
+  padding: 1rem auto;
+  column-count: 3;
+  column-gap: 1rem;
+  -webkit-columns: 2;
+  /* Chrome, Safari, Opera */
+  -moz-columns: 2;
+  /* Firefox */
+  columns: 2;
+
+  p {
+    margin: 0 0 1rem 0;
+  }
+
   @media only screen and (max-width: 568px) {
-    flex-direction: column;
-    column-count: 2;
-    column-gap: 2rem;
-    -webkit-columns: 40px 2;
-    /* Chrome, Safari, Opera */
-    -moz-columns: 60px 2;
-    /* Firefox */
-    columns: 60px 2;
+    width: 15rem;
   }
 `
 

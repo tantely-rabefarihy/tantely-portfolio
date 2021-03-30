@@ -11,7 +11,7 @@ const Burger = () => {
   }
 
   useOnClickOutside(node, () => setOpen(false))
-  console.log(isOpen)
+  // console.log(isOpen)
   return (
     <>
       <Menu style={{ padding: "0.5rem" }} ref={node}>
@@ -71,7 +71,7 @@ const LinksContainer = styled.div`
   color: ${({ theme }) => theme.PrimaryFontColor};
   position: fixed;
   width: 50vw;
-  height: 100vh;
+  height: 100%;
   top: 0;
   right: 0;
   transform: ${({ isOpen }) => (isOpen ? "translateX(0)" : "translateX(100%)")};
@@ -84,7 +84,6 @@ const LinksContainer = styled.div`
     padding: 2rem 0;
     color: black;
     text-decoration: none;
-    /* transition: color 0.3s linear; */
     font-weight: bolder;
     transition: transform 0.5s;
     will-change: transform;
