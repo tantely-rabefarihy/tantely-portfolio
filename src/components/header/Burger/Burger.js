@@ -15,7 +15,7 @@ const Burger = () => {
   return (
     <>
       <Menu style={{ padding: "0.5rem" }} ref={node}>
-        <BurgerContainer>
+        <BurgerContainer isOpen={isOpen}>
           <Hamburger
             rounded
             toggled={isOpen}
@@ -48,9 +48,10 @@ const Burger = () => {
 export default Burger
 
 const BurgerContainer = styled.div`
-  /* display: none; */
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    position: relative;
+    position: ${({ isOpen }) => (isOpen ? "fixed" : "relative")};
+    top: ${({ isOpen }) => (isOpen ? "10px" : "0")};
+    right: ${({ isOpen }) => (isOpen ? "10px" : "0")};
     z-index: 20;
   }
 `

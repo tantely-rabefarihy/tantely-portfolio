@@ -85,7 +85,8 @@ const Covid = () => {
                   <span>&#9675;</span> Express
                 </p>
                 <p>
-                  <span>&#9675;</span> Firebase / Cloud Firestore
+                  <span>&#9675;</span> Firebase / Cloud Firestore (deployment,
+                  Auth and Database)
                 </p>
 
                 <p>
@@ -96,6 +97,9 @@ const Covid = () => {
                 </p>
                 <p>
                   <span>&#9675;</span> Recharts (chart)
+                </p>
+                <p>
+                  <span>&#9675;</span> Heroku (back-end deployment)
                 </p>
               </Stack>
             </TechContainer>

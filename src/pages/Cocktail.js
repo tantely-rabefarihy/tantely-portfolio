@@ -68,23 +68,7 @@ const Cocktail = () => {
                   <span>&#9675;</span> React
                 </p>
                 <p>
-                  <span>&#9675;</span> Node
-                </p>
-                <p>
-                  <span>&#9675;</span> Express
-                </p>
-                <p>
-                  <span>&#9675;</span> Firebase / Cloud Firestore
-                </p>
-
-                <p>
-                  <span>&#9675;</span> Styled Components
-                </p>
-                <p>
-                  <span>&#9675;</span> React Leaflet (map)
-                </p>
-                <p>
-                  <span>&#9675;</span> Recharts (chart)
+                  <span>&#9675;</span> Netlify
                 </p>
               </Stack>
             </TechContainer>

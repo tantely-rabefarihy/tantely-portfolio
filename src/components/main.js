@@ -81,12 +81,27 @@ const Main = () => {
               <p>
                 <span>&#9675;</span> Styled-Components
               </p>
+              <p>
+                <span>&#9675;</span> Heroku
+              </p>
+              <p>
+                <span>&#9675;</span> Netlify
+              </p>
+              <p>
+                <span>&#9675;</span> Gatsby
+              </p>
             </SkillsRows>
           </div>
         </SkillsSection>
 
         <ProjectsSection>
-          <h2>These are some of my projects</h2>
+          <h2
+            data-sal="slide-up"
+            data-sal-duration="1000"
+            data-sal-easing="easeOutCubic"
+          >
+            These are some of my projects
+          </h2>
           <Projects id="projects">
             <ProjectBox
               data-sal="slide-up"
@@ -296,14 +311,16 @@ const SkillsRows = styled.div`
   /* Chrome, Safari, Opera */
   -moz-columns: 2;
   /* Firefox */
-  columns: 2;
+  columns: 3;
 
   p {
     margin: 0 0 1rem 0;
+    column-width: 10rem;
   }
 
   @media only screen and (max-width: 568px) {
     width: 15rem;
+    columns: 2;
   }
 `
 
