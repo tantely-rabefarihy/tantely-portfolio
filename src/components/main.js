@@ -128,6 +128,24 @@ const Main = () => {
               data-sal-easing="easeOutCubic"
             >
               <Card>
+                <Link to="/ecommerce">
+                  <img
+                    src="https://github.com/tantely-rabefarihy/cocktailDB/raw/main/src/assets/cocktailDB.png"
+                    alt="project2"
+                  />
+                </Link>
+                <Caption>E-commerce store</Caption>
+              </Card>
+              <Description>
+                E-commerce store specialized in wearables.
+              </Description>
+            </ProjectBox>
+            <ProjectBox
+              data-sal="slide-up"
+              data-sal-duration="1000"
+              data-sal-easing="easeOutCubic"
+            >
+              <Card>
                 <Link to="/cocktail">
                   <img
                     src="https://github.com/tantely-rabefarihy/cocktailDB/raw/main/src/assets/cocktailDB.png"
