@@ -6,7 +6,13 @@ const GlobalStyle = createGlobalStyle`
 
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
+
+*, *:before, *:after {
+box-sizing:inherit;
+}
+
 
 h1,
 h2, h3 {
@@ -24,7 +30,6 @@ body {
     min-height: 100%;
     color: black;
     background: ${theme.primaryLight};
-
 }
 
 `

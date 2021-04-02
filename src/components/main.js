@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Github from "../images/github_logo.svg"
 import Letter from "../images/letter_logo.svg"
 import LinkedIn from "../images/linkedin.svg"
+import ecomPic from "../images/ecom.png"
 import { EmojiMoving, SlideIn } from "../styles/Animations"
 import profile from "../images/profile-pic.png"
 
@@ -129,10 +130,7 @@ const Main = () => {
             >
               <Card>
                 <Link to="/ecommerce">
-                  <img
-                    src="https://github.com/tantely-rabefarihy/cocktailDB/raw/main/src/assets/cocktailDB.png"
-                    alt="project2"
-                  />
+                  <img src={ecomPic} alt="project2" />
                 </Link>
                 <Caption>E-commerce store</Caption>
               </Card>
@@ -355,21 +353,22 @@ const ProjectsSection = styled.section`
 
 const Projects = styled.div`
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 
   @media only screen and (max-width: 568px) {
-    flex-wrap: wrap;
+    column-gap: 1rem;
   }
 `
 
 const ProjectBox = styled.div`
+  margin: 1rem 0;
   background-color: white;
   border-radius: 8px;
   display: flex;
   padding: 1rem;
   flex-direction: column;
-  width: 20rem;
+  width: 18rem;
   position: relative; /* For positioning the pseudo-element */
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -404,8 +403,8 @@ const ProjectBox = styled.div`
 
 const Card = styled.div`
   img {
-    height: 15rem;
-    width: 20rem;
+    height: auto;
+    width: 100%;
     border-radius: 5px;
   }
   @media only screen and (max-width: 568px) {
