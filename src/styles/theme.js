@@ -5,5 +5,5 @@ export const theme = {
   primaryFontColor: "#000",
   primaryLight: "#F4F3EE",
   primaryHover: "#4F5050",
-  mobile: "576px",
+  mobile: "568px",
 }

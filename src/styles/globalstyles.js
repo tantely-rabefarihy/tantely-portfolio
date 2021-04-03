@@ -50,7 +50,7 @@ h3 {
 
 p, a, li {
   /* max-width: 60ch; */
-  --fluid-type-min: 0.8rem;
+  --fluid-type-min: 0.6rem;
   --fluid-type-max: 1.1rem;
 }
 
