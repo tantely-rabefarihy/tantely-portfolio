@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { theme } from "../styles/theme"
 import styled from "styled-components"
 import Github from "../images/github_logo.svg"
 import Letter from "../images/letter_logo.svg"
@@ -15,12 +16,13 @@ const Main = () => {
         <Welcome>
           <Titles>
             <h1>
-              Hey there{" "}
+              Hey
               <Hand role="img" aria-label="hand">
                 👋🏼
               </Hand>
+              there,
               <br></br>
-              I'm <Name>Tantely</Name>.
+              I'm <Name>Tantely</Name>
             </h1>
             <Subtitle>Web Developer</Subtitle>
           </Titles>
@@ -36,74 +38,83 @@ const Main = () => {
               My country of origin is Madagascar{" "}
               <span role="img" aria-label="flag">
                 🇲🇬
-              </span>{" "}
-              (yes! Like the movie but it does not do justice to the real one).
-              After travelling to three continents, I have finally settled in
-              Montreal (Quebec, Canada). I have an atypical profile as I am not
-              originally from a computer science background. Before my career
-              shift, I was working in the hospitality / customer service
+              </span>
+              . (yes! Like the movie but it does not do justice to the real
+              one). After travelling to three continents, I have finally settled
+              in Montreal (Quebec, Canada). I have an atypical profile as I am
+              not originally from a computer science background. Before my
+              career shift, I was working in the hospitality / customer service
               industry. I am now looking to have a positive impact on people's
               lives through creative websites and apps.
             </p>
           </About>
         </Welcome>
+        <Divider
+          data-sal="slide-up"
+          data-sal-duration="1000"
+          data-sal-easing="easeOutCubic"
+        ></Divider>
         <SkillsSection
           data-sal="slide-up"
           data-sal-duration="1000"
           data-sal-easing="easeOutCubic"
         >
-          <h2>Skills</h2>
-          <div style={{ margin: "0 auto" }}>
+          <h3>Skills</h3>
+          <SkillsContainer>
             <SkillsRows>
-              <p>
+              <li>
                 <span>&#9675;</span> Javascript ES6+
-              </p>
-              <p>
+              </li>
+              <li>
                 <span>&#9675;</span> HTML & CSS
-              </p>
+              </li>
 
-              <p>
+              <li>
                 <span>&#9675;</span> React
-              </p>
-              <p>
+              </li>
+              <li>
                 <span>&#9675;</span> Redux
-              </p>
+              </li>
 
-              <p>
+              <li>
                 <span>&#9675;</span> Node.js
-              </p>
-              <p>
+              </li>
+              <li>
                 <span>&#9675;</span> MongoDB
-              </p>
+              </li>
 
-              <p>
+              <li>
                 <span>&#9675;</span> Firebase
-              </p>
-              <p>
+              </li>
+              <li>
                 <span>&#9675;</span> Styled-Components
-              </p>
-              <p>
+              </li>
+              <li>
                 <span>&#9675;</span> Heroku
-              </p>
-              <p>
+              </li>
+              <li>
                 <span>&#9675;</span> Netlify
-              </p>
-              <p>
+              </li>
+              <li>
                 <span>&#9675;</span> Gatsby
-              </p>
+              </li>
             </SkillsRows>
-          </div>
+          </SkillsContainer>
         </SkillsSection>
-
+        <Divider
+          data-sal="slide-up"
+          data-sal-duration="1000"
+          data-sal-easing="easeOutCubic"
+        ></Divider>
         <ProjectsSection>
-          <h2
+          <h3
             data-sal="slide-up"
             data-sal-duration="1000"
             data-sal-easing="easeOutCubic"
           >
             These are some of my projects
-          </h2>
-          <Projects id="projects">
+          </h3>
+          <Projects>
             <ProjectBox
               data-sal="slide-up"
               data-sal-duration="1000"
@@ -135,7 +146,7 @@ const Main = () => {
                 <Caption>E-commerce store</Caption>
               </Card>
               <Description>
-                E-commerce store specialized in wearables.
+                E-commerce store with a cart feature using Redux.
               </Description>
             </ProjectBox>
             <ProjectBox
@@ -158,8 +169,18 @@ const Main = () => {
             </ProjectBox>
           </Projects>
         </ProjectsSection>
-        <Collaboration id="collaboration">
-          <h2>Connect with me and let's collaborate!</h2>
+        <Divider
+          data-sal="slide-up"
+          data-sal-duration="1000"
+          data-sal-easing="easeOutCubic"
+        ></Divider>
+        <Collaboration
+          data-sal="slide-up"
+          data-sal-duration="1000"
+          data-sal-easing="easeOutCubic"
+          id="collaboration"
+        >
+          <h3>Connect with me and let's collaborate!</h3>
           <p>
             Reach out to me anytime if you're looking for a web developer or
             just want to connect.
@@ -198,6 +219,8 @@ const Main = () => {
 export default Main
 
 const Hand = styled.span`
+  font-size: 0.8em;
+  padding: 0 0.8rem;
   animation: ${EmojiMoving} 2.5s 1;
   animation-delay: 2s;
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
@@ -206,11 +229,8 @@ const Hand = styled.span`
 `
 
 const Name = styled.span`
-  background: linear-gradient(
-    274deg,
-    rgba(246, 183, 0, 1) 0%,
-    rgba(252, 2, 2, 1) 100%
-  );
+  padding: 0 0.1rem;
+  background: linear-gradient(to bottom, #f83600 0%, #f9d423 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -222,8 +242,8 @@ const MainContainer = styled.main`
   flex-direction: column;
   padding: 0 1rem;
 
-  @media only screen and (max-width: 568px) {
-    /* margin-top: 5rem; */
+  @media only screen and (min-width: 325px) and (max-width: 568px) {
+    margin-top: 5rem;
   }
 `
 const Welcome = styled.section`
@@ -247,10 +267,10 @@ const Titles = styled.div`
   animation: ${SlideIn} 1s 0.5s forwards;
 
   h1 {
-    font-size: 4rem;
     font-weight: bolder;
     margin: 0;
     width: 100%;
+    /* font-size: clamp(4rem, 3vw, 15rem); */
   }
 
   @media only screen and (max-width: 568px) {
@@ -258,33 +278,25 @@ const Titles = styled.div`
     height: 90vh;
     text-align: left;
     h1 {
-      font-size: 3rem;
       text-align: left;
-      line-height: 4rem;
+      line-height: 1em;
     }
   }
 `
 
-const Subtitle = styled.p`
+const Subtitle = styled.h2`
   text-align: end;
   color: black;
-  font-size: 1.5rem;
   font-weight: light;
 
   @media only screen and (max-width: 568px) {
-    font-size: 1.2rem;
     text-align: left;
   }
 `
 const MyPicture = styled.img`
-  width: 16rem;
-  height: 16rem;
+  width: calc(10rem + (100 - 15) * ((100vw - 300px) / (1600 - 300)));
+  height: calc(10rem + (100 - 15) * ((100vw - 300px) / (1600 - 300)));
   border-radius: 50%;
-
-  @media only screen and (max-width: 568px) {
-    width: 6rem;
-    height: 6rem;
-  }
 `
 
 const About = styled.div`
@@ -295,59 +307,61 @@ const About = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  row-gap: 1rem;
+  column-gap: 1rem;
 
   p {
-    font-size: 1rem;
-    width: 20rem;
-    line-height: 1.5rem;
+    max-width: 500px;
+    line-height: 2;
+    width: 100%;
+    line-height: 2;
   }
 
   @media only screen and (max-width: 568px) {
     flex-direction: column;
     p {
-      font-size: 0.75rem;
+      /* font-size: 0.75rem; */
       width: 100%;
     }
   }
 `
 
 const SkillsSection = styled.section`
-  h2 {
+  margin-bottom: 2rem;
+  h3 {
     text-align: center;
   }
 `
 
-const SkillsRows = styled.div`
-  width: calc(100vw / 3);
+const SkillsContainer = styled.div`
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 1rem auto;
-  column-count: 3;
-  column-gap: 1rem;
-  -webkit-columns: 2;
-  /* Chrome, Safari, Opera */
-  -moz-columns: 2;
-  /* Firefox */
-  columns: 3;
+`
 
-  p {
-    margin: 0 0 1rem 0;
-    column-width: 10rem;
+const SkillsRows = styled.ul`
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+
+  li {
+    list-style-type: none;
+    margin: 1rem;
   }
 
   @media only screen and (max-width: 568px) {
-    width: 15rem;
-    columns: 2;
+    justify-items: center;
   }
 `
 
 const ProjectsSection = styled.section`
-  margin: 2rem 0;
-  h2 {
+  margin-bottom: 3rem;
+  h3 {
     color: rgb(0, 0, 0);
     text-align: center;
     padding-bottom: 1rem;
     font-weight: bolder;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
   }
 `
 
@@ -355,14 +369,14 @@ const Projects = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  row-gap: 1rem;
+  column-gap: 1rem;
 
   @media only screen and (max-width: 568px) {
-    column-gap: 1rem;
   }
 `
 
 const ProjectBox = styled.div`
-  margin: 1rem 0;
   background-color: white;
   border-radius: 8px;
   display: flex;
@@ -396,38 +410,42 @@ const ProjectBox = styled.div`
   }
 
   @media only screen and (max-width: 568px) {
+    max-width: 18rem;
     width: 100%;
     margin: 1rem;
   }
 `
 
 const Card = styled.div`
+  display: flex;
+  flex-direction: column;
   img {
-    height: auto;
+    height: 100%;
+    min-height: 12rem;
+    max-height: 12rem;
     width: 100%;
     border-radius: 5px;
   }
   @media only screen and (max-width: 568px) {
     img {
-      height: 10rem;
-      width: 100%;
+      height: auto;
     }
   }
 `
 const Caption = styled.p`
-  font-size: 1rem;
   font-weight: bolder;
   text-align: center;
 `
 
 const Description = styled.p`
-  padding: 0 2rem;
+  align-items: center;
+  /* padding: 0 2rem; */
 `
 
 const Collaboration = styled.section`
   height: 50vh;
   text-align: center;
-  h2 {
+  h3 {
     text-align: center;
   }
 `
@@ -447,3 +465,9 @@ const SocialLogo = styled.img`
 `
 
 const Letr = styled(SocialLogo)``
+
+const Divider = styled.div`
+  border-bottom: 1px solid ${theme.secondaryDark};
+  margin: 2rem auto;
+  width: 50%;
+`

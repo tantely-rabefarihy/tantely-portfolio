@@ -21,7 +21,7 @@ const Burger = () => {
             toggled={isOpen}
             toggle={setOpen}
             color="black"
-            size={50}
+            size={25}
             direction="left"
             label="Show menu"
             distance="md"

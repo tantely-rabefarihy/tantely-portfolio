@@ -6,8 +6,8 @@ import pageLogo from "../images/logo_tantely.svg"
 const LogoContainer = styled.div`
   img {
     padding-left: 0.75rem;
-    width: 4rem;
-    height: 4rem;
+    width: calc(50px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
+    height: calc(50px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
   }
 `
 

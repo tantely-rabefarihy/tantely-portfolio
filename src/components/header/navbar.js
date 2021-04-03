@@ -34,7 +34,6 @@ const LinksContainer = styled.ul`
   a {
     text-decoration: none;
     color: black;
-    font-size: 1.2em;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
 
