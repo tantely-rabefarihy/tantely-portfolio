@@ -18,7 +18,7 @@ const HomePage = () => (
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&family=Questrial&family=Roboto:wght@100;300;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Poppins:wght@200;400;500;700&family=Questrial&display=swap"
           rel="stylesheet"
         />
       </Helmet>

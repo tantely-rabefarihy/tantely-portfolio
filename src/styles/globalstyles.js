@@ -16,11 +16,12 @@ box-sizing:inherit;
 
 
 h1,
-h2, h3 {
+h2, h3, h4 {
   font-family: "Questrial", sans-serif;
 }
 p, a , li{
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  
 }
 
 h1 {
@@ -47,6 +48,12 @@ h3 {
   margin: 2rem auto;
   /* max-width: 30ch; */
 }
+
+h4 {
+  font-size: 1.3rem;
+}
+
+p {font-weight: lighter}
 
 p, a, li {
   /* max-width: 60ch; */

@@ -243,7 +243,7 @@ const MainContainer = styled.main`
   padding: 0 1rem;
 
   @media only screen and (min-width: 325px) and (max-width: 568px) {
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
   }
 `
 const Welcome = styled.section`
@@ -275,7 +275,7 @@ const Titles = styled.div`
 
   @media only screen and (max-width: 568px) {
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
     text-align: left;
     h1 {
       text-align: left;
@@ -287,7 +287,7 @@ const Titles = styled.div`
 const Subtitle = styled.h2`
   text-align: end;
   color: black;
-  font-weight: light;
+  font-weight: lighter;
 
   @media only screen and (max-width: 568px) {
     text-align: left;
@@ -432,7 +432,7 @@ const Card = styled.div`
     }
   }
 `
-const Caption = styled.p`
+const Caption = styled.h4`
   font-weight: bolder;
   text-align: center;
 `
