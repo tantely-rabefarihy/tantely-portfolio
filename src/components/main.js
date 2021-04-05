@@ -106,7 +106,7 @@ const Main = () => {
           data-sal-duration="1000"
           data-sal-easing="easeOutCubic"
         ></Divider>
-        <ProjectsSection>
+        <ProjectsSection id="projects">
           <h3
             data-sal="slide-up"
             data-sal-duration="1000"
