@@ -38,3 +38,13 @@ export const SlideIn = keyframes`
     opacity: 1;
   }
 `
+
+export const FadeIn = keyframes` from {
+  
+  opacity: 0;
+}
+to {
+  
+  opacity: 1;
+}
+`

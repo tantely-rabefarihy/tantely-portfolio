@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { SlideIn } from "../styles/Animations"
+import { FadeIn } from "../styles/Animations"
 import { theme } from "../styles/theme"
 
 export const Container = styled.div`
@@ -7,7 +7,8 @@ export const Container = styled.div`
   flex-direction: column;
   margin: 0 auto;
   opacity: 0;
-  animation: ${SlideIn} 0.8s 0.8s forwards;
+  animation: ${FadeIn} 1s ease;
+  -webkit-animation: ${FadeIn} 1s ease;
 
   h3 {
     border-bottom: 1px solid ${theme.secondaryDark};
@@ -129,7 +130,7 @@ export const ImageContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   row-gap: 3rem;
-  padding: 2rem;
+  padding: 1rem;
 `
 
 export const Image = styled.img`
