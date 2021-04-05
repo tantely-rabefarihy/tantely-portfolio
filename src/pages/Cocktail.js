@@ -28,7 +28,7 @@ const Cocktail = () => {
       <Layout>
         <Container>
           <SubContainer>
-            <Title>Cocktail library</Title>
+            <Title>Cocktail Corner</Title>
             <p>
               This is a side project that I created. I was working as a
               bartender years ago and I wanted to create this library for

@@ -24,7 +24,9 @@ export const Container = styled.div`
 export const SubContainer = styled.main`
   margin: 0 1rem;
 `
-export const Title = styled.h1``
+export const Title = styled.h1`
+  width: 100%;
+`
 
 export const LinksContainer = styled.div`
   display: flex;

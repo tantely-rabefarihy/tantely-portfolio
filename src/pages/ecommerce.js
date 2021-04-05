@@ -28,7 +28,7 @@ const Ecom = () => {
         <Logo />
         <Container>
           <SubContainer>
-            <Title>E-commerce Store</Title>
+            <Title>E-Store</Title>
             <p>
               This group project was built during my bootcamp at Concordia
               University. We were asked to build a store.
