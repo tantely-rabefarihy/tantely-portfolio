@@ -267,7 +267,6 @@ const Titles = styled.div`
   animation: ${SlideIn} 1s 0.5s forwards;
 
   h1 {
-    font-weight: bolder;
     margin: 0;
     width: 100%;
     /* font-size: clamp(4rem, 3vw, 15rem); */

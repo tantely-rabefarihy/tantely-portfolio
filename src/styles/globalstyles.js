@@ -15,12 +15,15 @@ box-sizing:inherit;
 }
 
 
-h1,
-h2, h3, h4 {
+h1 {
   font-family: "Questrial", sans-serif;
+
+}
+h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
 }
 p, a , li{
-  font-family: "Poppins", sans-serif;
+  font-family: "Hind Madurai", sans-serif;
   
 }
 

@@ -23,10 +23,8 @@
     "hamburger-react": "^2.4.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
-    "react-burger-menu": "^3.0.6",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-particles-js": "^3.4.1",
     "styled-components": "^5.2.1",
     "theme-ui": "^0.3.5"
   },
