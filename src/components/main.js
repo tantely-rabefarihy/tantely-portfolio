@@ -26,13 +26,21 @@ const Main = () => {
             </h1>
             <Subtitle>Web Developer</Subtitle>
           </Titles>
-          <About
-            className="about-animation"
-            data-sal="slide-up"
-            data-sal-duration="1000"
-            data-sal-easing="easeOutCubic"
-            id="about"
-          >
+        </Welcome>
+        <Divider
+          data-sal="slide-up"
+          data-sal-duration="1000"
+          data-sal-easing="easeOutCubic"
+        ></Divider>
+        <About
+          className="about-animation"
+          data-sal="slide-up"
+          data-sal-duration="1000"
+          data-sal-easing="easeOutCubic"
+          id="about"
+        >
+          <h3>About me</h3>
+          <MyStory>
             <MyPicture src={profile} alt="profile_picture" />
             <p>
               My country of origin is Madagascar{" "}
@@ -41,14 +49,16 @@ const Main = () => {
               </span>
               . (yes! Like the movie but it does not do justice to the real
               one). After travelling to three continents, I have finally settled
-              in Montreal (Quebec, Canada). I have an atypical profile as I am
-              not originally from a computer science background. Before my
-              career shift, I was working in the hospitality / customer service
-              industry. I am now looking to have a positive impact on people's
-              lives through creative websites and apps.
+              in Montreal (Quebec, Canada). Before pursuing my passion for
+              coding, I was working in the hospitality / customer service
+              industry. My experiences were an opportunity to improve my problem
+              solving skills and develop a solution-oriented perspective. As a
+              developer, my goal is to harness the power of technology in order
+              to solve people's challenges.
             </p>
-          </About>
-        </Welcome>
+          </MyStory>
+        </About>
+
         <Divider
           data-sal="slide-up"
           data-sal-duration="1000"
@@ -266,7 +276,6 @@ const Titles = styled.div`
   h1 {
     margin: 0;
     width: 100%;
-    /* font-size: clamp(4rem, 3vw, 15rem); */
   }
   @media only screen and (min-width: 568px) {
   }
@@ -297,7 +306,13 @@ const MyPicture = styled.img`
   border-radius: 50%;
 `
 
-const About = styled.div`
+const About = styled.section`
+  h3 {
+    text-align: center;
+  }
+`
+
+const MyStory = styled.div`
   align-items: center;
   text-align: justify;
   width: 100%;
@@ -318,7 +333,6 @@ const About = styled.div`
   @media only screen and (max-width: 568px) {
     flex-direction: column;
     p {
-      /* font-size: 0.75rem; */
       width: 100%;
     }
   }
