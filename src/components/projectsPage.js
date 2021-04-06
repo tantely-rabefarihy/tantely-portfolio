@@ -129,7 +129,12 @@ export const ImageContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-evenly;
   row-gap: 3rem;
-  padding: 1rem;
+  padding: 1rem 0;
+
+  @media only screen and (max-width: 568px) {
+    /* row-gap: 4rem; */
+    /* height: 15rem; */
+  }
 `
 
 export const Image = styled.img`
@@ -143,6 +148,7 @@ export const Image = styled.img`
 
   @media only screen and (max-width: 568px) {
     height: 15rem;
+    max-width: 380px;
   }
 `
 
