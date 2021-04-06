@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
 
 
 html {
-  scroll-behavior: smooth;
+  
   box-sizing: border-box;
  
 }
@@ -16,7 +16,7 @@ box-sizing:inherit;
 
 
 h1 {
-  font-family: "Questrial", sans-serif;
+  font-family: "Poppins", sans-serif;
 
 }
 h2, h3, h4 {
@@ -31,7 +31,7 @@ h1 {
   --fluid-type-min: 4rem;
   --fluid-type-max: 8rem;
   --fluid-type-target: 6vw;
-
+  font-weight: 600;
   /* max-width: 15ch; */
 }
 
@@ -85,7 +85,7 @@ body {
     margin:0 auto;
     min-width: 300px;
     max-width:1200px;
-    min-height: 800px;
+    /* min-height: 800px; */
     color: black;
     background: ${theme.primaryLight};
 }

@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Burger from "./Burger/Burger"
 import Logo from "../logo"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Nav = styled.nav`
   display: flex;
@@ -77,13 +78,13 @@ const NavBar = () => {
         <Burger />
         <LinksContainer>
           <li>
-            <a href="#about">About me</a>
+            <AnchorLink to="/#about">About me</AnchorLink>
           </li>
           <li>
-            <a href="#projects">Work</a>
+            <AnchorLink to="/#projects">Work</AnchorLink>
           </li>
           <li>
-            <a href="#collaboration">Contact</a>
+            <AnchorLink to="/#collaboration">Contact</AnchorLink>
           </li>
         </LinksContainer>
       </Nav>

@@ -8,7 +8,7 @@ export const Container = styled.div`
   margin: 0 auto;
   opacity: 0;
   animation: ${FadeIn} 1s forwards;
-  -webkit-animation: ${FadeIn} ease 1s forwards;
+  -webkit-animation: ${FadeIn} 1s forwards;
 
   h3 {
     border-bottom: 1px solid ${theme.secondaryDark};
@@ -41,7 +41,6 @@ export const ProjectLink = styled.p`
   .arrow {
     font-weight: bold;
     color: ${theme.primaryLight};
-    /* background-color: inherit; */
     margin: 1rem 0;
     padding: 0.5rem;
     text-decoration: none;

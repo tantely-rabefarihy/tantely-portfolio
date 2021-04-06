@@ -10,7 +10,7 @@ import { ThemeProvider } from "styled-components"
 const HomePage = () => (
   <ThemeProvider theme={theme}>
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>Tantely Rabefarihy - Full Stack Developer</title>
         <meta
           name="title"
@@ -22,7 +22,7 @@ const HomePage = () => (
           href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600&family=Montserrat:wght@300;500;700&family=Questrial&display=swap"
           rel="stylesheet"
         />
-      </Helmet>
+      </Helmet> */}
       <GlobalStyle />
       <Layout>
         <NavBar />

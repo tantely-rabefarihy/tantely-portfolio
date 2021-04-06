@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react"
 import Hamburger from "hamburger-react"
 import styled from "styled-components"
 import { useOnClickOutside } from "../../../utils/hooks"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Burger = () => {
   const [isOpen, setOpen] = useState(false)
@@ -14,14 +15,17 @@ const Burger = () => {
   // console.log(isOpen)
   return (
     <>
-      <Menu style={{ padding: "0.5rem" }} ref={node}>
+      <Menu
+        // style={{ padding: "0.5rem" }}
+        ref={node}
+      >
         <BurgerContainer isOpen={isOpen}>
           <Hamburger
             rounded
             toggled={isOpen}
             toggle={setOpen}
             color="black"
-            size={25}
+            size={30}
             direction="left"
             label="Show menu"
             distance="md"
@@ -30,15 +34,16 @@ const Burger = () => {
         </BurgerContainer>
 
         <LinksContainer isOpen={isOpen}>
-          <a href="#about" onClick={() => handleClose()}>
+          <AnchorLink to="/#about" onClick={() => handleClose()}>
             About me
-          </a>
-          <a href="#projects" onClick={() => handleClose()}>
+          </AnchorLink>
+
+          <AnchorLink to="/#projects" onClick={() => handleClose()}>
             Work
-          </a>
-          <a href="#collaboration" onClick={() => handleClose()}>
+          </AnchorLink>
+          <AnchorLink to="/#collaboration" onClick={() => handleClose()}>
             Contact
-          </a>
+          </AnchorLink>
         </LinksContainer>
       </Menu>
     </>
@@ -50,8 +55,8 @@ export default Burger
 const BurgerContainer = styled.div`
   @media (max-width: ${({ theme }) => theme.mobile}) {
     position: ${({ isOpen }) => (isOpen ? "fixed" : "relative")};
-    top: ${({ isOpen }) => (isOpen ? "10px" : "0")};
-    right: ${({ isOpen }) => (isOpen ? "10px" : "0")};
+    top: 0;
+    right: 0;
     z-index: 20;
   }
 `
@@ -77,6 +82,7 @@ const LinksContainer = styled.div`
   right: 0;
   transform: ${({ isOpen }) => (isOpen ? "translateX(0)" : "translateX(100%)")};
   transition: transform 0.3s ease-in-out;
+  will-change: transform;
 
   a {
     font-size: 4rem;

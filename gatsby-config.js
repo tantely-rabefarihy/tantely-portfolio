@@ -6,6 +6,13 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -10,
+        duration: 300,
+      },
+    },
+    {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
         threshold: 0.05, // Percentage of an element's area that needs to be visible to launch animation

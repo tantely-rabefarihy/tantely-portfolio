@@ -241,17 +241,12 @@ const MainContainer = styled.main`
   display: flex;
   flex-direction: column;
   padding: 0 1rem;
-
-  @media only screen and (min-width: 325px) and (max-width: 568px) {
-    /* margin-top: 5rem; */
-  }
 `
 const Welcome = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0 1rem;
-  height: 100vh;
 
   @media only screen and (max-width: 568px) {
     height: fit-content;
@@ -265,16 +260,20 @@ const Titles = styled.div`
   transform: translateY(30px);
   opacity: 0;
   animation: ${SlideIn} 1s 0.5s forwards;
+  height: 100vh;
+  justify-content: center;
 
   h1 {
     margin: 0;
     width: 100%;
     /* font-size: clamp(4rem, 3vw, 15rem); */
   }
+  @media only screen and (min-width: 568px) {
+  }
 
   @media only screen and (max-width: 568px) {
     justify-content: center;
-    height: 100vh;
+
     text-align: left;
     h1 {
       text-align: left;
