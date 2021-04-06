@@ -20,7 +20,7 @@ import {
   LessonsContainer,
 } from "../components/projectsPage"
 
-const Ecom = () => {
+const Ecommerce = () => {
   return (
     <>
       <GlobalStyle />
@@ -118,4 +118,4 @@ const Ecom = () => {
   )
 }
 
-export default Ecom
+export default Ecommerce
