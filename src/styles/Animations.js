@@ -1,3 +1,4 @@
+import React from "react"
 import { keyframes, styled } from "styled-components"
 
 export const EmojiMoving = keyframes`
