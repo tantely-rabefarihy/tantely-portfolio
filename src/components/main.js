@@ -321,7 +321,6 @@ const ProjectsSection = styled.section`
     text-align: center;
     padding-bottom: 1rem;
     font-weight: bolder;
-    /* font-size: 1.5em; */
   }
 `
 
@@ -329,8 +328,8 @@ const Projects = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  row-gap: 1rem;
-  column-gap: 1rem;
+  row-gap: 2rem;
+  column-gap: 2rem;
 
   @media only screen and (max-width: 568px) {
   }
@@ -372,7 +371,7 @@ const ProjectBox = styled.div`
   @media only screen and (max-width: 568px) {
     max-width: 18rem;
     width: 100%;
-    margin: 1rem;
+    margin: 1rem auto;
   }
 `
 
