@@ -30,14 +30,14 @@ const Main = () => {
           </Titles>
         </Welcome>
         <Divider
-          data-sal="slide-up"
-          data-sal-duration="1000"
+          data-sal="fade"
+          data-sal-duration="500"
           data-sal-easing="easeOutCubic"
         ></Divider>
         <About
           className="about-animation"
-          data-sal="slide-up"
-          data-sal-duration="1000"
+          data-sal="fade"
+          data-sal-duration="500"
           data-sal-easing="easeOutCubic"
           id="about"
         >
@@ -62,13 +62,13 @@ const Main = () => {
         </About>
 
         <Divider
-          data-sal="slide-up"
-          data-sal-duration="1000"
+          data-sal="fade"
+          data-sal-duration="500"
           data-sal-easing="easeOutCubic"
         ></Divider>
         <SkillsSection
-          data-sal="slide-up"
-          data-sal-duration="1000"
+          data-sal="fade"
+          data-sal-duration="500"
           data-sal-easing="easeOutCubic"
         >
           <h3>Skills</h3>
@@ -114,22 +114,22 @@ const Main = () => {
           </SkillsContainer>
         </SkillsSection>
         <Divider
-          data-sal="slide-up"
-          data-sal-duration="1000"
+          data-sal="fade"
+          data-sal-duration="500"
           data-sal-easing="easeOutCubic"
         ></Divider>
         <ProjectsSection id="projects">
           <h3
-            data-sal="slide-up"
-            data-sal-duration="1000"
+            data-sal="fade"
+            data-sal-duration="500"
             data-sal-easing="easeOutCubic"
           >
             These are some of my projects
           </h3>
           <Projects>
             <ProjectBox
-              data-sal="slide-up"
-              data-sal-duration="1000"
+              data-sal="fade"
+              data-sal-duration="500"
               data-sal-easing="easeOutCubic"
             >
               <Card>
@@ -144,8 +144,8 @@ const Main = () => {
               </Description>
             </ProjectBox>
             <ProjectBox
-              data-sal="slide-up"
-              data-sal-duration="1000"
+              data-sal="fade"
+              data-sal-duration="500"
               data-sal-easing="easeOutCubic"
             >
               <Card>
@@ -159,8 +159,8 @@ const Main = () => {
               </Description>
             </ProjectBox>
             <ProjectBox
-              data-sal="slide-up"
-              data-sal-duration="1000"
+              data-sal="fade"
+              data-sal-duration="500"
               data-sal-easing="easeOutCubic"
             >
               <Card>
@@ -176,13 +176,13 @@ const Main = () => {
           </Projects>
         </ProjectsSection>
         <Divider
-          data-sal="slide-up"
-          data-sal-duration="1000"
+          data-sal="fade"
+          data-sal-duration="500"
           data-sal-easing="easeOutCubic"
         ></Divider>
         <Collaboration
-          data-sal="slide-up"
-          data-sal-duration="1000"
+          data-sal="fade"
+          data-sal-duration="500"
           data-sal-easing="easeOutCubic"
           id="collaboration"
         >

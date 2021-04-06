@@ -127,9 +127,10 @@ export const GithubLink = styled.p`
 export const ImageContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3rem 2rem;
+  justify-content: space-evenly;
+  gap: 2rem 2rem;
   padding: 1rem 0;
+  margin: 0 auto;
 
   @media only screen and (max-width: 568px) {
     height: 100%;
