@@ -7,8 +7,8 @@ export const Container = styled.div`
   flex-direction: column;
   margin: 0 auto;
   opacity: 0;
-  animation: ${FadeIn} 1s ease;
-  -webkit-animation: ${FadeIn} 1s ease;
+  animation: ${FadeIn} 1s forwards;
+  -webkit-animation: ${FadeIn} ease 1s forwards;
 
   h3 {
     border-bottom: 1px solid ${theme.secondaryDark};

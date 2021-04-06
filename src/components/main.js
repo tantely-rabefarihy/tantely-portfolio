@@ -121,7 +121,7 @@ const Main = () => {
               data-sal-easing="easeOutCubic"
             >
               <Card>
-                <Link to="/Covid">
+                <Link to="/covid">
                   <img
                     src="https://github.com/tantely-rabefarihy/covid19-app-tracker/raw/main/client/screenshots/Covid-app.png"
                     alt="project"
@@ -140,7 +140,7 @@ const Main = () => {
               data-sal-easing="easeOutCubic"
             >
               <Card>
-                <Link to="/Ecom">
+                <Link to="/ecommerce">
                   <img src={ecomPic} alt="project2" />
                 </Link>
                 <Caption>E-commerce store</Caption>
@@ -155,7 +155,7 @@ const Main = () => {
               data-sal-easing="easeOutCubic"
             >
               <Card>
-                <Link to="/Cocktail">
+                <Link to="/cocktail">
                   <img
                     src="https://github.com/tantely-rabefarihy/cocktailDB/raw/main/src/assets/cocktailDB.png"
                     alt="project2"
