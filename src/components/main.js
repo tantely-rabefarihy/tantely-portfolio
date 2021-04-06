@@ -29,18 +29,8 @@ const Main = () => {
             <Subtitle>Web Developer</Subtitle>
           </Titles>
         </Welcome>
-        <Divider
-          data-sal="fade"
-          data-sal-duration="500"
-          data-sal-easing="easeOutCubic"
-        ></Divider>
-        <About
-          className="about-animation"
-          data-sal="fade"
-          data-sal-duration="500"
-          data-sal-easing="easeOutCubic"
-          id="about"
-        >
+        <Divider></Divider>
+        <About className="about-animation" id="about">
           <h3>About me</h3>
           <MyStory>
             <MyPicture src={profile} alt="profile_picture" />
@@ -61,16 +51,8 @@ const Main = () => {
           </MyStory>
         </About>
 
-        <Divider
-          data-sal="fade"
-          data-sal-duration="500"
-          data-sal-easing="easeOutCubic"
-        ></Divider>
-        <SkillsSection
-          data-sal="fade"
-          data-sal-duration="500"
-          data-sal-easing="easeOutCubic"
-        >
+        <Divider></Divider>
+        <SkillsSection>
           <h3>Skills</h3>
           <SkillsContainer>
             <SkillsRows>
@@ -113,25 +95,11 @@ const Main = () => {
             </SkillsRows>
           </SkillsContainer>
         </SkillsSection>
-        <Divider
-          data-sal="fade"
-          data-sal-duration="500"
-          data-sal-easing="easeOutCubic"
-        ></Divider>
+        <Divider></Divider>
         <ProjectsSection id="projects">
-          <h3
-            data-sal="fade"
-            data-sal-duration="500"
-            data-sal-easing="easeOutCubic"
-          >
-            These are some of my projects
-          </h3>
+          <h3>These are some of my projects</h3>
           <Projects>
-            <ProjectBox
-              data-sal="fade"
-              data-sal-duration="500"
-              data-sal-easing="easeOutCubic"
-            >
+            <ProjectBox>
               <Card>
                 <Link to="/tracker/">
                   <img src={homeCovid} alt="project" />
@@ -143,11 +111,7 @@ const Main = () => {
                 situation.
               </Description>
             </ProjectBox>
-            <ProjectBox
-              data-sal="fade"
-              data-sal-duration="500"
-              data-sal-easing="easeOutCubic"
-            >
+            <ProjectBox>
               <Card>
                 <Link to="/store/">
                   <img src={ecomPic} alt="project2" />
@@ -158,11 +122,7 @@ const Main = () => {
                 E-commerce store with a cart feature using Redux.
               </Description>
             </ProjectBox>
-            <ProjectBox
-              data-sal="fade"
-              data-sal-duration="500"
-              data-sal-easing="easeOutCubic"
-            >
+            <ProjectBox>
               <Card>
                 <Link to="/corner/">
                   <img src={homeCocktail} alt="project2" />
@@ -175,17 +135,8 @@ const Main = () => {
             </ProjectBox>
           </Projects>
         </ProjectsSection>
-        <Divider
-          data-sal="fade"
-          data-sal-duration="500"
-          data-sal-easing="easeOutCubic"
-        ></Divider>
-        <Collaboration
-          data-sal="fade"
-          data-sal-duration="500"
-          data-sal-easing="easeOutCubic"
-          id="collaboration"
-        >
+        <Divider></Divider>
+        <Collaboration id="collaboration">
           <h3>Connect with me and let's collaborate!</h3>
           <p>
             Reach out to me anytime if you're looking for a web developer or
