@@ -85,7 +85,6 @@ const LinksContainer = styled.div`
   will-change: transform;
 
   a {
-    font-size: 4rem;
     width: fit-content;
     margin: 0 auto;
     padding: 2rem 0;
@@ -102,6 +101,7 @@ const LinksContainer = styled.div`
 
     &:hover {
       transform: scale(1.1);
+      will-change: transform;
     }
   }
 `
