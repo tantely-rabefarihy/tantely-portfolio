@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 
 import {
   Container,
-  SubContainer,
+  LinkSection,
   Title,
   ProjectLink,
   GithubLink,
@@ -34,28 +34,30 @@ const Covid = () => {
             University. I wanted to create a web app to track the covid
             situation all over the world with some key numbers.
           </p>
-          <LinksContainer>
-            <ProjectLink>
-              <a
-                className="arrow"
-                href="https://final-project-tantely.web.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live website
-              </a>
-            </ProjectLink>
-            <GithubLink>
-              <a
-                className="arrow"
-                href="https://github.com/tantely-rabefarihy/covid19-app-tracker"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Repository
-              </a>
-            </GithubLink>
-          </LinksContainer>
+          <LinkSection>
+            <LinksContainer>
+              <ProjectLink>
+                <a
+                  className="arrow"
+                  href="https://final-project-tantely.web.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live website
+                </a>
+              </ProjectLink>
+              <GithubLink>
+                <a
+                  className="arrow"
+                  href="https://github.com/tantely-rabefarihy/covid19-app-tracker"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Repository
+                </a>
+              </GithubLink>
+            </LinksContainer>
+          </LinkSection>
 
           <PurposeContainer className="project-section">
             <h3>Purpose</h3>

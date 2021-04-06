@@ -6,7 +6,7 @@ import ecomPic from "../images/ecom.png"
 import cart from "../images/cart.png"
 import {
   Container,
-  SubContainer,
+  LinkSection,
   Title,
   ProjectLink,
   GithubLink,
@@ -32,28 +32,30 @@ const Ecommerce = () => {
             This group project was built during my bootcamp at Concordia
             University. We were asked to build a store.
           </p>
-          <LinksContainer>
-            <ProjectLink>
-              <a
-                className="arrow"
-                href="https://wizardly-bassi-29ed3a.netlify.app"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live website
-              </a>
-            </ProjectLink>
-            <GithubLink>
-              <a
-                className="arrow"
-                href="https://github.com/tantely-rabefarihy/project-GROUP-e-commerce-client"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Repository
-              </a>
-            </GithubLink>
-          </LinksContainer>
+          <LinkSection>
+            <LinksContainer>
+              <ProjectLink>
+                <a
+                  className="arrow"
+                  href="https://wizardly-bassi-29ed3a.netlify.app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live website
+                </a>
+              </ProjectLink>
+              <GithubLink>
+                <a
+                  className="arrow"
+                  href="https://github.com/tantely-rabefarihy/project-GROUP-e-commerce-client"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Repository
+                </a>
+              </GithubLink>
+            </LinksContainer>
+          </LinkSection>
 
           <PurposeContainer className="project-section">
             <h3>Purpose</h3>

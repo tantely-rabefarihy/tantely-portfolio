@@ -6,7 +6,7 @@ import detailsCocktail from "../images/details_cocktail.png"
 import Layout from "../components/layout"
 import {
   Container,
-  SubContainer,
+  LinkSection,
   Title,
   ProjectLink,
   GithubLink,
@@ -32,29 +32,30 @@ const Cocktail = () => {
             This is a side project that I created. I was working as a bartender
             years ago and I wanted to create this library for cocktails fans.
           </p>
-
-          <LinksContainer>
-            <ProjectLink>
-              <a
-                className="arrow"
-                href="https://lemur-cocktailcorner.netlify.app"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live website
-              </a>
-            </ProjectLink>
-            <GithubLink>
-              <a
-                className="arrow"
-                href="https://github.com/tantely-rabefarihy/cocktailDB"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Repository
-              </a>
-            </GithubLink>
-          </LinksContainer>
+          <LinkSection>
+            <LinksContainer>
+              <ProjectLink>
+                <a
+                  className="arrow"
+                  href="https://lemur-cocktailcorner.netlify.app"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live website
+                </a>
+              </ProjectLink>
+              <GithubLink>
+                <a
+                  className="arrow"
+                  href="https://github.com/tantely-rabefarihy/cocktailDB"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Repository
+                </a>
+              </GithubLink>
+            </LinksContainer>
+          </LinkSection>
 
           <PurposeContainer className="project-section">
             <h3>Purpose</h3>

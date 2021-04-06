@@ -21,16 +21,14 @@ export const Container = styled.div`
     width: 100%;
   }
 `
-export const SubContainer = styled.main`
-  /* margin: 0; */
-`
+
 export const Title = styled.h1`
   width: 100%;
 `
-
+export const LinkSection = styled.div``
 export const LinksContainer = styled.div`
   display: flex;
-  max-width: 600px;
+  flex-direction: row;
   margin: 0 auto;
 `
 
