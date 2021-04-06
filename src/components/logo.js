@@ -9,7 +9,7 @@ const LogoContainer = styled.div`
   max-width: calc(100% / 10);
   height: 100%;
   img {
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 0;
     width: 100%;
     height: 100%;
   }

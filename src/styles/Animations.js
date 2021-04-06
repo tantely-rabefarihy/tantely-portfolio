@@ -1,7 +1,7 @@
 import { keyframes, styled } from "styled-components"
 
 export const EmojiMoving = keyframes`
-  @keyframes {
+  /* @keyframes {
     0% {
       transform: rotate(0deg);
     }
@@ -134,7 +134,7 @@ export const EmojiMoving = keyframes`
     100% {
       -ms-transform: rotate(0deg);
     }
-  }
+  } */
 
   0% {
     transform: rotate(0deg);

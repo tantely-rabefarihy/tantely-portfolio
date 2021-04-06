@@ -19,11 +19,11 @@ export const Container = styled.div`
   }
 
   @media only screen and (max-width: 568px) {
-    width: 100vw;
+    width: 100%;
   }
 `
 export const SubContainer = styled.main`
-  margin: 0 1rem;
+  /* margin: 0; */
 `
 export const Title = styled.h1`
   width: 100%;
