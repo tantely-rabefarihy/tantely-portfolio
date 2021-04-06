@@ -39,14 +39,14 @@ const Main = () => {
               <span role="img" aria-label="flag">
                 🇲🇬
               </span>
-              . (yes! Like the movie but it does not do justice to the real
-              one). After travelling to three continents, I have finally settled
-              in Montreal (Quebec, Canada). Before pursuing my passion for
-              coding, I was working in the hospitality / customer service
-              industry. My experiences were an opportunity to improve my problem
-              solving skills and develop a solution-oriented perspective. As a
-              developer, my goal is to harness the power of technology in order
-              to solve people's challenges.
+              (The real one is better than the movie!). After travelling to
+              three continents, I have finally settled in Montreal (Quebec,
+              Canada). Before pursuing my passion for coding, I was working in
+              the hospitality / customer service industry. My experiences were
+              an opportunity to improve my problem solving skills and develop a
+              solution-oriented perspective. As a developer, my goal is to
+              harness the power of technology in order to solve people's
+              challenges.
             </p>
           </MyStory>
         </About>

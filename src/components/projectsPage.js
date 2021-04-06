@@ -5,10 +5,9 @@ import { theme } from "../styles/theme"
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   opacity: 0;
-  animation: ${FadeIn} 1s forwards;
-  -webkit-animation: ${FadeIn} 1s forwards;
+  animation: ${FadeIn} 0.8s forwards;
+  -webkit-animation: ${FadeIn} 0.8s forwards;
 
   h3 {
     border-bottom: 1px solid ${theme.secondaryDark};
