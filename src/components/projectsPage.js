@@ -130,11 +130,6 @@ export const ImageContainer = styled.div`
   justify-content: space-evenly;
   row-gap: 3rem;
   padding: 1rem 0;
-
-  @media only screen and (max-width: 568px) {
-    /* row-gap: 4rem; */
-    /* height: 15rem; */
-  }
 `
 
 export const Image = styled.img`

@@ -8,6 +8,8 @@ import LinkedIn from "../images/linkedin.svg"
 import ecomPic from "../images/ecom.png"
 import { EmojiMoving, SlideIn } from "../styles/Animations"
 import profile from "../images/profile-pic.png"
+import homeCovid from "../images/homepage_covid.png"
+import homeCocktail from "../images/homepage_cocktail.png"
 
 const Main = () => {
   return (
@@ -132,10 +134,7 @@ const Main = () => {
             >
               <Card>
                 <Link to="/tracker/">
-                  <img
-                    src="https://github.com/tantely-rabefarihy/covid19-app-tracker/raw/main/client/screenshots/Covid-app.png"
-                    alt="project"
-                  />
+                  <img src={homeCovid} alt="project" />
                 </Link>
                 <Caption>Covid tracker app</Caption>
               </Card>
@@ -166,10 +165,7 @@ const Main = () => {
             >
               <Card>
                 <Link to="/corner/">
-                  <img
-                    src="https://github.com/tantely-rabefarihy/cocktailDB/raw/main/src/assets/cocktailDB.png"
-                    alt="project2"
-                  />
+                  <img src={homeCocktail} alt="project2" />
                 </Link>
                 <Caption>Cocktail corner</Caption>
               </Card>
@@ -231,8 +227,9 @@ export default Main
 const Hand = styled.span`
   font-size: 0.8em;
   padding: 0 0.8rem;
-  animation: ${EmojiMoving} 2.5s 1;
-  animation-delay: 2s;
+  animation: ${EmojiMoving} 2.5s 2s;
+  -webkit-animation: ${EmojiMoving} 2.5s 2s;
+  -moz-animation: ${EmojiMoving} 2.5s 2s;
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
   will-change: transform;
@@ -250,7 +247,7 @@ const MainContainer = styled.main`
   z-index: -1;
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 `
 const Welcome = styled.section`
   display: flex;
@@ -269,7 +266,7 @@ const Titles = styled.div`
   flex-direction: column;
   transform: translateY(30px);
   opacity: 0;
-  animation: ${SlideIn} 1s 0.5s forwards;
+  animation: ${SlideIn} 1s forwards;
   height: 100vh;
   justify-content: center;
 

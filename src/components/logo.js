@@ -4,10 +4,17 @@ import { Link } from "gatsby"
 import pageLogo from "../images/logo_tantely.svg"
 
 const LogoContainer = styled.div`
+  min-width: 4.5rem;
+  width: 100%;
+  max-width: calc(100% / 10);
+  height: 100%;
   img {
-    padding-left: 0.75rem;
-    width: calc(50px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
-    height: calc(50px + (80 - 40) * ((100vw - 300px) / (1600 - 300)));
+    padding: 1rem 0;
+    /* width: calc(50px + (80 - 10) * ((100vw - 300px) / (1600 - 300)));
+    height: calc(50px + (80 - 10) * ((100vw - 300px) / (1600 - 300))); */
+    /* min-width: 4rem; */
+    width: 100%;
+    height: 100%;
   }
 `
 

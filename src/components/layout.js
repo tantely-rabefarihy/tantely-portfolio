@@ -12,6 +12,7 @@ const Layout = ({ children }) => {
   return (
     <StyledLayout>
       <Helmet>
+        <html lang="en" />
         <title>Tantely Rabefarihy - Full Stack Developer</title>
         <meta
           name="title"

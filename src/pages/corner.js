@@ -24,8 +24,9 @@ const Cocktail = () => {
   return (
     <>
       <GlobalStyle />
-      <Logo />
+
       <Layout>
+        <Logo />
         <Container>
           <SubContainer>
             <Title>Cocktail Corner</Title>

@@ -9,6 +9,7 @@ const Nav = styled.nav`
   flex-direction: row;
   justify-content: space-between;
   background: transparent;
+  height: auto;
 `
 
 const LinksContainer = styled.ul`
