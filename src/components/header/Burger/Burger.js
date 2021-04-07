@@ -53,12 +53,10 @@ const Burger = () => {
 export default Burger
 
 const BurgerContainer = styled.div`
-  display: none;
   @media (max-width: ${({ theme }) => theme.mobile}) {
-    display: flex;
     position: ${({ isOpen }) => (isOpen ? "fixed" : "relative")};
-    top: 0;
-    right: ${({ isOpen }) => (isOpen ? "0" : "20px")};
+    top: 10px;
+    right: 20px;
     z-index: 20;
   }
 `
