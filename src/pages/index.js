@@ -10,8 +10,8 @@ const HomePage = () => (
   <ThemeProvider theme={theme}>
     <>
       <GlobalStyle />
+      <NavBar />
       <Layout>
-        <NavBar />
         <Main />
       </Layout>
     </>

@@ -3,13 +3,20 @@ import styled from "styled-components"
 import Burger from "./Burger/Burger"
 import Logo from "../logo"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { theme } from "../../styles/theme"
 
 const Nav = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background: transparent;
   height: auto;
+  position: fixed;
+  max-width: 1200px;
+  width: 100%;
+  background-color: ${theme.primaryLight};
+  z-index: 999;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
 `
 
 const LinksContainer = styled.ul`
@@ -17,16 +24,19 @@ const LinksContainer = styled.ul`
   flex-direction: row;
   margin: 0;
   padding: 0;
-
-  @media only screen and (max-width: 568px) {
+  max-width: 600px;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 1rem;
+  @media only screen and (max-width: ${theme.mobile}) {
     display: none;
   }
 
   li {
     list-style-type: none;
     display: flex;
-    padding-right: 4rem;
-    align-self: center;
+    width: fit-content;
 
     @media only screen and (max-width: 568px) {
       padding-right: 1rem;
@@ -38,7 +48,7 @@ const LinksContainer = styled.ul`
     color: black;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
-
+    width: max-content;
     /* underline effect for the links */
     text-transform: capitalize;
     display: inline-block;
