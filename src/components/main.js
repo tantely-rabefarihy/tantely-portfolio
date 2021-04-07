@@ -414,7 +414,6 @@ const Card = styled.div`
 
   .projectImage {
     /* min-height: 20rem; */
-
     /* height: 100%;
     min-height: 12rem;
     max-height: 12rem;

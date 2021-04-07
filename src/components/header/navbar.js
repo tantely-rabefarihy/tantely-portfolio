@@ -11,8 +11,7 @@ const Nav = styled.nav`
   justify-content: space-between;
   height: auto;
   position: fixed;
-  max-width: 1200px;
-  width: 100%;
+  width: 100vw;
   background-color: ${theme.primaryLight};
   z-index: 999;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);

@@ -7,6 +7,7 @@ const StyledLayout = styled.div`
   min-height: 100%;
   margin: 0 auto;
   padding: 0 1rem;
+  max-width: 1600px;
 `
 
 const Layout = ({ children }) => {

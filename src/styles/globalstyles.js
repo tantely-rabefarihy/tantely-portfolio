@@ -78,13 +78,14 @@ li {
 }
 
 
-
+nav {
+  width:100vw;
+}
 
 body {
     position:relative;
     margin:0 auto;
     min-width: 300px;
-    max-width:1200px;
     /* min-height: 800px; */
     color: black;
     background: ${theme.primaryLight};
