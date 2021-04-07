@@ -1,8 +1,6 @@
 import React from "react"
 import GlobalStyle from "../styles/globalstyles"
 import Logo from "../components/logo"
-import homeCocktail from "../images/homepage_cocktail.png"
-import detailsCocktail from "../images/details_cocktail.png"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import {
@@ -19,7 +17,6 @@ import {
   TechContainer,
   LinksContainer,
   LessonsContainer,
-  ImageTemplate,
 } from "../components/projectsPage"
 
 const Cocktail = () => {
@@ -106,7 +103,6 @@ const Cocktail = () => {
                 className="projectImg"
               />
             </Image>
-
             <Image>
               <StaticImage
                 src="../images/details_cocktail.png"

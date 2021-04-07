@@ -126,7 +126,7 @@ export const ImageContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 2rem 2rem;
+  gap: 3rem 3rem;
   padding: 1rem 0;
   margin: 0 auto;
 
@@ -141,8 +141,6 @@ export const Image = styled.div`
     max-width: 510px;
     border-radius: 8px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
     height: 100%;
     max-height: auto;
 
@@ -174,21 +172,3 @@ export const DetailsContainer = styled.div``
 export const TechContainer = styled.div``
 
 export const LessonsContainer = styled.div``
-
-export const ImageTemplate = ({ src, alt }) => {
-  const imgWidth = 250
-  const imgHeight = 250
-  return (
-    <StaticImage
-      src={src}
-      at={alt}
-      width={imgWidth}
-      height={imgHeight}
-      css={`
-        border-radius: 5px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
-          0 6px 6px rgba(0, 0, 0, 0.23);
-      `}
-    />
-  )
-}

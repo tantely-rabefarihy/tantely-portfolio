@@ -2,8 +2,6 @@ import React from "react"
 import GlobalStyle from "../styles/globalstyles"
 import Logo from "../components/logo"
 import Layout from "../components/layout"
-import ecomPic from "../images/ecom.png"
-import cart from "../images/cart.png"
 import { StaticImage } from "gatsby-plugin-image"
 import {
   Container,

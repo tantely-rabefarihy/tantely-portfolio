@@ -1,8 +1,6 @@
 import React from "react"
 import GlobalStyle from "../styles/globalstyles"
 import Logo from "../components/logo"
-import homeCovid from "../images/homepage_covid.png"
-import userCovid from "../images/userpage_covid.png"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
 import {
