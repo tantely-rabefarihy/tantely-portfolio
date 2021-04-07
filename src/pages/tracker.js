@@ -4,7 +4,7 @@ import Logo from "../components/logo"
 import homeCovid from "../images/homepage_covid.png"
 import userCovid from "../images/userpage_covid.png"
 import Layout from "../components/layout"
-
+import { StaticImage } from "gatsby-plugin-image"
 import {
   Container,
   LinkSection,
@@ -133,8 +133,20 @@ const Covid = () => {
             </p>
           </LessonsContainer>
           <ImageContainer>
-            <Image src={homeCovid} alt="application image" />
-            <Image src={userCovid} alt="application image" />
+            <Image>
+              <StaticImage
+                src="../images/homepage_covid.png"
+                alt="application image"
+                className="projectImg"
+              />
+            </Image>
+            <Image>
+              <StaticImage
+                src="../images/userpage_covid.png"
+                alt="application image"
+                className="projectImg"
+              />
+            </Image>
           </ImageContainer>
         </Container>
       </Layout>

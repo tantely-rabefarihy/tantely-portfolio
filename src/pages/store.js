@@ -4,6 +4,7 @@ import Logo from "../components/logo"
 import Layout from "../components/layout"
 import ecomPic from "../images/ecom.png"
 import cart from "../images/cart.png"
+import { StaticImage } from "gatsby-plugin-image"
 import {
   Container,
   LinkSection,
@@ -109,8 +110,20 @@ const Ecommerce = () => {
             </p>
           </LessonsContainer>
           <ImageContainer>
-            <Image src={ecomPic} alt="application image" />
-            <Image src={cart} alt="application image" />
+            <Image>
+              <StaticImage
+                src="../images/ecom.png"
+                alt="application image"
+                className="projectImg"
+              />
+            </Image>
+            <Image>
+              <StaticImage
+                src="../images/cart.png"
+                alt="application image"
+                className="projectImg"
+              />
+            </Image>
           </ImageContainer>
         </Container>
       </Layout>

@@ -5,13 +5,14 @@ import styled from "styled-components"
 import Github from "../images/github_logo.svg"
 import Letter from "../images/letter_logo.svg"
 import LinkedIn from "../images/linkedin.svg"
-import ecomPic from "../images/ecom.png"
 import { EmojiMoving, SlideIn } from "../styles/Animations"
 import profile from "../images/profile-pic.png"
-import homeCovid from "../images/homepage_covid.png"
-import homeCocktail from "../images/homepage_cocktail.png"
+import { StaticImage } from "gatsby-plugin-image"
 
 const Main = () => {
+  const imgWidth = 250
+  const imgHeight = 250
+
   return (
     <>
       <MainContainer>
@@ -100,38 +101,63 @@ const Main = () => {
           <h3>These are some of my projects</h3>
           <Projects>
             <ProjectBox>
-              <Card>
-                <Link to="/tracker/">
-                  <img src={homeCovid} alt="project" />
-                </Link>
-                <Caption>Covid tracker app</Caption>
-              </Card>
-              <Description>
-                A web app to track worldwide numbers related to the COVID
-                situation.
-              </Description>
+              <Link to="/tracker/" className="projectLink">
+                <Card>
+                  <StaticImage
+                    src="../images/homepage_covid.png"
+                    alt="project"
+                    imgClassName="projectImage"
+                    width={imgWidth}
+                    height={imgHeight}
+                    as="div"
+                  />
+
+                  <Caption>Covid tracker app</Caption>
+                </Card>
+
+                <Description>
+                  A web app to track worldwide numbers related to the COVID
+                  situation.
+                </Description>
+              </Link>
             </ProjectBox>
+
             <ProjectBox>
-              <Card>
-                <Link to="/store/">
-                  <img src={ecomPic} alt="project2" />
-                </Link>
-                <Caption>E-commerce store</Caption>
-              </Card>
-              <Description>
-                E-commerce store with a cart feature using Redux.
-              </Description>
+              <Link to="/store/" className="projectLink">
+                <Card>
+                  <StaticImage
+                    src="../images/ecom.png"
+                    alt="project2"
+                    width={imgWidth}
+                    height={imgHeight}
+                    imgClassName="projectImage"
+                  />
+
+                  <Caption>E-commerce store</Caption>
+                </Card>
+                <Description>
+                  E-commerce store with a cart feature using Redux.
+                </Description>
+              </Link>
             </ProjectBox>
+
             <ProjectBox>
-              <Card>
-                <Link to="/corner/">
-                  <img src={homeCocktail} alt="project2" />
-                </Link>
-                <Caption>Cocktail corner</Caption>
-              </Card>
-              <Description>
-                A cocktail library to search for a recipe.
-              </Description>
+              <Link to="/corner/" className="projectLink">
+                <Card>
+                  <StaticImage
+                    src="../images/homepage_cocktail.png"
+                    width={imgWidth}
+                    height={imgHeight}
+                    alt="project3"
+                    imgClassName="projectImage"
+                  />
+
+                  <Caption>Cocktail corner</Caption>
+                </Card>
+                <Description>
+                  A cocktail library to search for a recipe.
+                </Description>
+              </Link>
             </ProjectBox>
           </Projects>
         </ProjectsSection>
@@ -331,6 +357,11 @@ const Projects = styled.div`
   row-gap: 2rem;
   column-gap: 2rem;
 
+  .projectLink {
+    text-decoration: none;
+    color: ${theme.primaryFontColor};
+  }
+
   @media only screen and (max-width: 568px) {
   }
 `
@@ -378,15 +409,18 @@ const ProjectBox = styled.div`
 const Card = styled.div`
   display: flex;
   flex-direction: column;
-  img {
-    height: 100%;
+
+  .projectImage {
+    /* min-height: 20rem; */
+
+    /* height: 100%;
     min-height: 12rem;
     max-height: 12rem;
     width: 100%;
-    border-radius: 5px;
+    border-radius: 5px; */
   }
   @media only screen and (max-width: 568px) {
-    img {
+    .projectImage {
       height: auto;
     }
   }

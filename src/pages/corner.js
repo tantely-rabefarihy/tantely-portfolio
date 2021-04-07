@@ -4,6 +4,7 @@ import Logo from "../components/logo"
 import homeCocktail from "../images/homepage_cocktail.png"
 import detailsCocktail from "../images/details_cocktail.png"
 import Layout from "../components/layout"
+import { StaticImage } from "gatsby-plugin-image"
 import {
   Container,
   LinkSection,
@@ -18,6 +19,7 @@ import {
   TechContainer,
   LinksContainer,
   LessonsContainer,
+  ImageTemplate,
 } from "../components/projectsPage"
 
 const Cocktail = () => {
@@ -68,7 +70,10 @@ const Cocktail = () => {
             <h3>Details</h3>
             <p>
               On the homepage, the user is able to search for a cocktail in a
-              search bar. Once you chose{" "}
+              search bar. Once you start typing, it will automatically look for
+              cocktails matching the first letters. After selecting a cocktail
+              of your choice, you will be directed to its page with all the
+              details.
             </p>
           </DetailsContainer>
           <TechContainer className="project-section">
@@ -94,12 +99,21 @@ const Cocktail = () => {
             </p>
           </LessonsContainer>
           <ImageContainer>
-            <picture>
-              <Image src={homeCocktail} alt="application image" />
-            </picture>
-            <picture>
-              <Image src={detailsCocktail} alt="application image" />
-            </picture>
+            <Image>
+              <StaticImage
+                src="../images/homepage_cocktail.png"
+                alt="application image"
+                className="projectImg"
+              />
+            </Image>
+
+            <Image>
+              <StaticImage
+                src="../images/details_cocktail.png"
+                alt="application image"
+                className="projectImg"
+              />
+            </Image>
           </ImageContainer>
         </Container>
       </Layout>

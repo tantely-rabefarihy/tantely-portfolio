@@ -1,7 +1,8 @@
+import React from "react"
 import styled from "styled-components"
 import { FadeIn } from "../styles/Animations"
 import { theme } from "../styles/theme"
-
+import { StaticImage } from "gatsby-plugin-image"
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -134,18 +135,21 @@ export const ImageContainer = styled.div`
   }
 `
 
-export const Image = styled.img`
-  width: 100%;
-  max-width: 510px;
-  border-radius: 8px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  height: 100%;
-  max-height: auto;
+export const Image = styled.div`
+  .projectImg {
+    width: 100%;
+    max-width: 510px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    height: 100%;
+    max-height: auto;
 
-  @media only screen and (max-width: 568px) {
-    height: 20rem;
-    max-width: 380px;
+    @media only screen and (max-width: 568px) {
+      height: 20rem;
+      max-width: 380px;
+    }
   }
 `
 
@@ -170,3 +174,21 @@ export const DetailsContainer = styled.div``
 export const TechContainer = styled.div``
 
 export const LessonsContainer = styled.div``
+
+export const ImageTemplate = ({ src, alt }) => {
+  const imgWidth = 250
+  const imgHeight = 250
+  return (
+    <StaticImage
+      src={src}
+      at={alt}
+      width={imgWidth}
+      height={imgHeight}
+      css={`
+        border-radius: 5px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
+      `}
+    />
+  )
+}
