@@ -1,5 +1,4 @@
-import React from "react"
-import { keyframes, styled } from "styled-components"
+import { keyframes } from "styled-components"
 
 export const EmojiMoving = keyframes`
   /* @keyframes {

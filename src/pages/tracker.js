@@ -136,6 +136,7 @@ const Covid = () => {
                 src="../images/homepage_covid.png"
                 alt="application image"
                 className="projectImg"
+                loading="eager"
               />
             </Image>
             <Image>
@@ -143,6 +144,7 @@ const Covid = () => {
                 src="../images/userpage_covid.png"
                 alt="application image"
                 className="projectImg"
+                loading="eager"
               />
             </Image>
           </ImageContainer>

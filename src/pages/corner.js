@@ -101,6 +101,7 @@ const Cocktail = () => {
                 src="../images/homepage_cocktail.png"
                 alt="application image"
                 className="projectImg"
+                loading="eager"
               />
             </Image>
             <Image>
@@ -108,6 +109,7 @@ const Cocktail = () => {
                 src="../images/details_cocktail.png"
                 alt="application image"
                 className="projectImg"
+                loading="eager"
               />
             </Image>
           </ImageContainer>

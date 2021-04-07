@@ -110,6 +110,7 @@ const Main = () => {
                     width={imgWidth}
                     height={imgHeight}
                     as="div"
+                    loading="eager"
                   />
 
                   <Caption>Covid tracker app</Caption>
@@ -131,6 +132,7 @@ const Main = () => {
                     width={imgWidth}
                     height={imgHeight}
                     imgClassName="projectImage"
+                    loading="eager"
                   />
 
                   <Caption>E-commerce store</Caption>
@@ -150,6 +152,7 @@ const Main = () => {
                     height={imgHeight}
                     alt="project3"
                     imgClassName="projectImage"
+                    loading="eager"
                   />
 
                   <Caption>Cocktail corner</Caption>

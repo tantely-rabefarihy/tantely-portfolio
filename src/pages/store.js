@@ -113,6 +113,7 @@ const Ecommerce = () => {
                 src="../images/ecom.png"
                 alt="application image"
                 className="projectImg"
+                loading="eager"
               />
             </Image>
             <Image>
@@ -120,6 +121,7 @@ const Ecommerce = () => {
                 src="../images/cart.png"
                 alt="application image"
                 className="projectImg"
+                loading="eager"
               />
             </Image>
           </ImageContainer>
