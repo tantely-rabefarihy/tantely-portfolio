@@ -109,7 +109,6 @@ const Main = () => {
                     imgClassName="projectImage"
                     width={imgWidth}
                     height={imgHeight}
-                    as="div"
                     loading="eager"
                   />
 
@@ -423,9 +422,9 @@ const Card = styled.div`
     border-radius: 5px; */
   }
   @media only screen and (max-width: 568px) {
-    .projectImage {
+    /* .projectImage {
       height: auto;
-    }
+    } */
   }
 `
 const Caption = styled.h4`
