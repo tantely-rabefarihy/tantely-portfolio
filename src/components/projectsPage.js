@@ -136,6 +136,7 @@ export const ImageContainer = styled.div`
 `
 
 export const Image = styled.div`
+
   .projectImg {
     width: 100%;
     max-width: 510px;
