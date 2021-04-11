@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import Burger from "./Burger/Burger"
 import Logo from "../logo"
@@ -14,8 +14,10 @@ const Nav = styled.nav`
   width: 100vw;
   background-color: ${theme.primaryLight};
   z-index: 999;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: ${props =>
+    props.isPast ? "0 2px 3px 0 rgba(0, 0, 0, 0.2)" : "none"};
   margin: 0 auto;
+  transition: 0.8s all ease;
 `
 
 const LinksContainer = styled.ul`
@@ -81,9 +83,23 @@ const LinksContainer = styled.ul`
 `
 
 const NavBar = () => {
+  const [isPast, setIsPast] = useState(false)
+
+  const handleScroll = () => {
+    if (window.scrollY >= 20) {
+      setIsPast(true)
+    } else {
+      setIsPast(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll)
+  }, [])
+
   return (
     <>
-      <Nav>
+      <Nav isPast={isPast}>
         <Logo />
         <Burger />
         <LinksContainer>
