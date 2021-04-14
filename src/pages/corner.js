@@ -80,9 +80,6 @@ const Cocktail = () => {
                 <span>&#9675;</span> React
               </p>
               <p>
-                <span>&#9675;</span> Bootstrap
-              </p>
-              <p>
                 <span>&#9675;</span> Netlify
               </p>
             </Stack>
@@ -90,9 +87,9 @@ const Cocktail = () => {
           <LessonsContainer className="project-section">
             <h3>Lessons</h3>
             <p>
-              This side project was an opportunity to use Bootstrap for the
-              first time. It is always interesting to implement different ways
-              to style my project in order to improve my set of skills.
+              This side project was an opportunity to create a simple database.
+              It is always interesting to implement different ways to style my
+              project in order to improve my set of skills.
             </p>
           </LessonsContainer>
           <ImageContainer>
