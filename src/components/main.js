@@ -40,14 +40,23 @@ const Main = () => {
               <span role="img" aria-label="flag">
                 🇲🇬
               </span>
-              (The real one is better than the movie!). After travelling to
-              three continents, I have finally settled in Montreal (Quebec,
+              (The real one is better than the movie!). After living most of the
+              time in France, I have finally settled in Montreal (Quebec,
               Canada). Before pursuing my passion for coding, I was working in
               the hospitality / customer service industry. My experiences were
               an opportunity to improve my problem solving skills and develop a
               solution-oriented perspective. As a developer, my goal is to
               harness the power of technology in order to solve people's
               challenges.
+              <p>
+                NB: Je suis français{" "}
+                <span role="img" aria-label="flag">
+                  🇫🇷
+                </span>{" "}
+                donc je peux tout à fait évoluer dans un environnement bilingue.
+                C'est un avantage qui m'a permis de créer de bonnes relations
+                avec les clients et résoudre leur problème efficacement.
+              </p>
             </p>
           </MyStory>
         </About>
