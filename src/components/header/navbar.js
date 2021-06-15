@@ -50,7 +50,6 @@ const LinksContainer = styled.ul`
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
     width: max-content;
-    /* underline effect for the links */
     text-transform: capitalize;
     display: inline-block;
     letter-spacing: 1px;
