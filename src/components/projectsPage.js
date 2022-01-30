@@ -1,8 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import { FadeIn } from "../styles/Animations"
-import { theme } from "../styles/theme"
-import { StaticImage } from "gatsby-plugin-image"
+import styled from "styled-components";
+import { FadeIn } from "../styles/Animations";
+import { theme } from "../styles/theme";
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;

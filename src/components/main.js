@@ -20,14 +20,16 @@ const Main = () => {
           <Titles>
             <h1>
               Hey
-              <Hand role="img" aria-label="hand">
+              <span role="img" aria-label="hand">
+                <Hand role="img" aria-label="hand">
                 👋🏼
-              </Hand>
+                </Hand>
+              </span>
               there,
               <br></br>
               I'm <Name>Tantely</Name>
             </h1>
-            <Subtitle>Web Developer</Subtitle>
+            <Subtitle>Front-End Web Developer</Subtitle>
           </Titles>
         </Welcome>
         <Divider></Divider>
@@ -55,7 +57,7 @@ const Main = () => {
                 </span>{" "}
                 donc je peux tout à fait évoluer dans un environnement bilingue.
                 C'est un avantage qui m'a permis de créer de bonnes relations
-                avec les clients et résoudre leur problème efficacement.
+                avec les clients et résoudre leurs problèmes efficacement.
               </p>
             </p>
           </MyStory>
@@ -67,10 +69,10 @@ const Main = () => {
           <SkillsContainer>
             <SkillsRows>
               <li>
-                <span>&#9675;</span> Javascript ES6+
+                <span>&#9675;</span> Javascript ES6+ / Typescript
               </li>
               <li>
-                <span>&#9675;</span> HTML & CSS
+                <span>&#9675;</span> HTML & CSS / SCSS
               </li>
 
               <li>
@@ -218,7 +220,7 @@ const Hand = styled.span`
   animation: ${EmojiMoving} 2.5s 2s;
   -webkit-animation: ${EmojiMoving} 2.5s 2s;
   -moz-animation: ${EmojiMoving} 2.5s 2s;
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  transform-origin: 70% 70%;
   display: inline-block;
   will-change: transform;
 `
