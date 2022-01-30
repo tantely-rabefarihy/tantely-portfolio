@@ -15,10 +15,10 @@ const Layout = ({ children }) => {
     <StyledLayout>
       <Helmet>
         <html lang="en" />
-        <title>Tantely Rabefarihy - Full Stack Developer</title>
+        <title>Tantely Rabefarihy - Front-End Web Developer</title>
         <meta
           name="title"
-          content="Tantely Rabefarihy - Full Stack Developer"
+          content="Tantely Rabefarihy - Front-End Web Developer"
         />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link

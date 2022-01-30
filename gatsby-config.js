@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Tantely Rabefarihy - Portfolio - Full Stack Developer`,
-    description: `Tantely Rabefarihy - Full Stack Developer.`,
+    title: `Tantely Rabefarihy - Portfolio - Front-End Web Developer`,
+    description: `Tantely Rabefarihy - Front-End Web Developer.`,
     author: `@tantely_rabefarihy`,
   },
   plugins: [
